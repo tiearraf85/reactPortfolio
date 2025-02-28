@@ -1,0 +1,38 @@
+.nav {
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+    background-color: black;
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+    gap: 20px;
+}
+
+.top {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    border-radius: 5px;
+    background-color: goldenrod;
+    color: white;
+    border: none;
+    font-weight: bold;  
+    cursor: pointer;
+    
+    
+}
+
+@media (max-width: 500px) {
+    .nav {
+        flex-direction: column;
+        align-items: center;
+    }
+    .top {
+        width: 50%;
+        
+    }
+}
+
+

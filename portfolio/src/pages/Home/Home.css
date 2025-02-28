@@ -1,0 +1,10 @@
+
+
+.background {
+    background-image: linear-gradient(goldenrod, white); 
+
+}
+
+.nav {
+    display: flex;
+}
