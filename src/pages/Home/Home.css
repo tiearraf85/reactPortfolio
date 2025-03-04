@@ -1,10 +1,78 @@
 
 
-.background {
+.home {
     background-image: linear-gradient(goldenrod, white); 
-
+    background-image: url('src/assets/gabriel-heinzer-g5jpH62pwes-unsplash.jpg')
+    
 }
 
-.nav {
+.middleSection h1 {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20;
+    /* padding-top: 5rem; */
+    margin: 0 auto;
+    font-size: 6rem;
+    font-weight: bold;
+    color: goldenrod;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    font-style: italic;
+    
 }
+
+
+.name {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: green;
+    padding-right: 10rem;
+
+}
+ 
+.socials {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    padding-right: 10rem;
+    
+}
+
+.linkedin, .github {
+    border-radius: 25%;
+}
+
+
+
+.facePic{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    border-radius: 50%;
+    
+}
+
+@media (max-width: 520px) {
+    .middleSection h1 {
+        font-size: 3rem;
+        padding-top: 5rem;
+
+    }
+    .name {
+        display: flex;
+        justify-content: center;
+        font-size: 1.5rem;
+    }
+    .facePic{
+        width: 100%;
+        height: auto;
+    }
+    
+}
+
