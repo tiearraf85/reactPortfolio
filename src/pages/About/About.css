@@ -1,0 +1,44 @@
+h1 {
+    font-size: 5rem;
+    
+}
+
+body {
+    background-image: url('src/assets/alexandru-acea-XEB8y0nRRP4-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-size: 100rem;
+    padding: 2rem;
+
+
+    }
+
+     .about {
+        display:flex;
+        flex-direction: column;
+    
+    }
+
+    .aboutMe {
+        display: flex;
+        flex-direction:column;
+        padding-right: 50rem;
+        font-size: 3ch;
+        font-weight: bold;
+    }
+
+
+    @media (max-width: 1400px){
+        .aboutMe {
+        width: 70%
+    
+    }
+
+    @media (max-width: 375px){ 
+   
+        .aboutMe{
+            width: 100%;
+    }
+
+    
+
+    }}
