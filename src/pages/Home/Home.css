@@ -1,7 +1,7 @@
 
 
 .home {
-    background-image: linear-gradient(goldenrod, white); 
+    /* background-image: linear-gradient(goldenrod, white);  */
     background-image: url('src/assets/DALL·E 2025-03-05 08.35.32 - A high-quality image of React.js code displayed on a screen with a goldenrod-colored background. The code includes functional components, hooks like u.webp');
     background-repeat: no-repeat;
     background-size: cover;
@@ -61,7 +61,8 @@ h1, .name {
     align-items: center;
     padding: 30px;
     border-radius: 50%;
-    
+
+   
 }
 
 @media (max-width: 520px) {
@@ -79,6 +80,7 @@ h1, .name {
         width: 100%;
         height: auto;
     }
+    
     
 }
 
