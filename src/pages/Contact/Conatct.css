@@ -1,0 +1,90 @@
+
+form {
+    background-color: aliceblue;
+    /* padding: 1rem; */
+    border-radius: 5%;
+    height: 30rem; 
+    width: 420px;
+    margin: auto;
+    padding-bottom: 3rem;
+    
+
+}
+
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+    
+
+}
+
+.info {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.gap {
+    display: grid;
+
+}
+
+
+
+
+.email {
+    width: 2rem;
+}
+.phone {
+    width: 2rem;
+}
+
+.button {
+    background: none;
+    border: none;
+    background-color: goldenrod;
+    border-radius: 5%;
+    padding: .5rem 2rem .5rem 2rem 
+    
+}
+
+.submitButton {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+@media (max-width: 1400px){
+    /* body {
+    display: flex;
+    flex-wrap: wrap;
+        
+    } */
+
+    form  {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+
+}
+
+@media (max-width: 375px) {
+    form {
+        width: 100%;
+        height: 100%;
+        
+
+    }
+
+    h1 {
+        font-size: .5rem;
+    }
+
+}

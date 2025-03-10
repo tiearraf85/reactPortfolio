@@ -1,0 +1,15 @@
+.images  {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2rem;
+
+}
+
+img {
+    width: 15em;
+}
+
+p {
+    font-size: 1.5rem;
+}
+

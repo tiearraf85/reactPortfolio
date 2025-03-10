@@ -1,11 +1,5 @@
 
 
-.home {
-    /* background-image: linear-gradient(goldenrod, white);  */
-    background-image: url('src/assets/DALL·E 2025-03-05 08.35.32 - A high-quality image of React.js code displayed on a screen with a goldenrod-colored background. The code includes functional components, hooks like u.webp');
-    background-repeat: no-repeat;
-    background-size: cover;
-}
 
 .middleSection h1 {
     display: flex;
