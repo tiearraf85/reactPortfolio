@@ -1,44 +1,44 @@
-h1 {
-    font-size: 5rem;
+  h1 {
+   
     
+  font-size: 5rem;
 }
 
 body {
-    background-image: url('src/assets/alexandru-acea-XEB8y0nRRP4-unsplash.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-padding: 2rem; 
-    }
+  background-image: url("src/assets/alexandru-acea-XEB8y0nRRP4-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* padding: 2rem; */
+}
 
-     .about {
-        display:flex;
-        flex-direction: column;
+
+.about {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.aboutMe {
+  display: flex;
+  flex-direction: column;
+  /* font-size: ch; */
+  font-weight: bold;
+  padding: 2rem;
+}
+
+@media (max-width: 1680px) {
+  .aboutMe {
+    width: 43%;
+  }
+
+  @media (max-width: 400px) {
+    .aboutMe h1 {
+      font-size: 2rem;
     
     }
-
     .aboutMe {
-        display: flex;
-        flex-direction:column;
-        font-size: 3ch;
-        font-weight: bold;
+        width: 100%;
+        padding: 0;
     }
-
-
-    @media (max-width: 1400px){
-        .aboutMe {
-        width: 50%
-    
-    }
-
-    @media (max-width: 375px){ 
-   
-        .aboutMe h1{
-            font-size: 2rem;
-            
-
-            width: 100%;
-    }
-
-    
-
-    }}
+  }
+}

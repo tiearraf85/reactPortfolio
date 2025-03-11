@@ -81,9 +81,9 @@ const Contact = () => {
         <button onClick={() => (window.location.href = "954-806-6996")}>
           <img src="src/assets/phone.png" className="phone" />
         </button>
-        <img src="src/assets/gmail.png" className="email" />
+        <img src="src/assets/gmail.png" className="email"/>
 
-        <a href="tiearraf85@gmailcom">tiearraf85@gmail.com</a>
+        <a href="mailto: tiearraf85@gmailcom">tiearraf85@gmail.com</a>/
       </div>
     </>
   );
