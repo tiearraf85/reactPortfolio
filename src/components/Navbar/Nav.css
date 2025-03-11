@@ -4,7 +4,7 @@
     position: sticky;
     top: 0;
     overflow: hidden;
-    background-color: black;
+    background: none;
     display: flex;
     justify-content: flex-end;
     padding: 20px;
@@ -15,13 +15,12 @@
 
 
 .top {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
     padding-bottom: 10px;
     padding-top: 10px;
     border-radius: 5px;
-    background-color: goldenrod;
-    color: white;
+    background-color: rgb(156, 151, 138);
     border: none;
     font-weight: bold;  
     cursor: pointer;
@@ -29,7 +28,7 @@
 }
 
 .top:hover {
-    background-color: #ffcc00;
+    background-color: white ;
     
 }
 
