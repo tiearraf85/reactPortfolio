@@ -5,6 +5,7 @@ import Contact from "../../pages/Contact";
 export default function Root() {
     return (
         <>
+        
             <Nav />
             <Contact/>
             <Outlet />
