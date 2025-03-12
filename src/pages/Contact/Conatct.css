@@ -1,14 +1,33 @@
+body {
+    background-size: 109rem;
 
+}
 form {
     background-color: aliceblue;
     /* padding: 1rem; */
     border-radius: 5%;
-    height: 30rem; 
-    width: 420px;
+    height: 36rem; 
+    width: 30rem;
     margin: auto;
-    padding-bottom: 3rem;
+    margin-top: 2rem;
+    /* padding-bottom: 3rem; */
     
+}
 
+h1 {
+    font-size: 4rem
+}
+
+.form-group {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+
+}
+ input {
+    max-width: 10rem;
+   
+    
 }
 
 .contact {
@@ -17,21 +36,26 @@ form {
     align-items: center;
     flex-direction: column;
     
-    
 
 }
 
 .info {
     display: flex;
     justify-content: center;
-    
-}
-
-.gap {
-    display: grid;
 
 }
 
+input, textarea {
+    /* padding: 8px; */
+    /* margin-top: 5px; */
+
+}
+
+textarea.message {
+    min-height: 100px;
+    resize: initial;
+
+}
 
 
 
@@ -58,33 +82,65 @@ form {
 
 
 
-
-@media (max-width: 1400px){
-    /* body {
+/* Modal styles */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
     display: flex;
-    flex-wrap: wrap;
-        
-    } */
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+  }
+  
+  .modal-content {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    width: 90%;
+    max-width: 400px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .modal-content h2 {
+    margin-bottom: 10px;
+  }
+  
+  .modal-content button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: goldenrod;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
 
-    form  {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
+
+  @media screen and (max-width: 480px) {
+   
+  
+    .contact h1 {
+      font-size: 3.4rem;
     }
-
-
-}
-
-@media (max-width: 375px) {
-    form {
-        width: 100%;
-        height: 100%;
-        
-
+  
+    .form-group input,
+    .form-group textarea {
+      font-size: 0.9rem;
+      padding: 10px;
     }
-
-    h1 {
-        font-size: .5rem;
+  
+    .button {
+      font-size: 0.9rem;
+      padding: 10px 18px;
     }
+  }
 
-}
+
+
+

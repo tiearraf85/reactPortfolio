@@ -2,12 +2,15 @@ import "./Conatct.css";
 import React, { useRef, useState } from "react";
 import Nav from '../../components/Navbar/Nav';
 import emailjs from "@emailjs/browser";
-
+import phoneIcon from '../../assets/phone.png';
+import gmailIcon from '../../assets/gmail.png';
 const Contact = () => {
   const form = useRef();
   const [fname, setFname] = useState("");
   const [lname, setLname] = useState("");
   const [message, setMessage] = useState("");
+ const [showModal, setShowModal] = useState(false);
+
   const sendEmail = (e) => {
     e.preventDefault();
     emailjs
@@ -21,7 +24,9 @@ const Contact = () => {
           setFname("");
           setLname("");
           setMessage("");
+          setShowModal(true);
         },
+
         (error) => {
           console.log("FAILED...", error.text);
         }
@@ -38,8 +43,10 @@ const Contact = () => {
           <p>Clermont, FL. 34987</p>
         </div>
 
-        <br />
-        <div className="gap">
+        <br />       
+         <div className="gap">
+
+        <div className="form-group">
           <label htmlFor="fName">First Name:</label>
 
           <input
@@ -50,6 +57,8 @@ const Contact = () => {
             placeholder="Your First Name.."
           />
           <br />
+          </div>
+          <div className="form-group">
           <label htmlFor="lName">Last Name:</label>
           <input
             type="text"
@@ -59,15 +68,18 @@ const Contact = () => {
             placeholder="Your Last Name.."
           />
           <br />
-
+</div>
+<div className='form-group'>
           <label htmlFor="message">Message:</label>
           <textarea
+          className='message'
             name="message"
             value={message}
             onChange={(e) => setMessage(e.target.value)}
             placeholder="Leave Me A Message.."
           ></textarea>
           <br />
+          </div>
           <div className="submitButton">
             <button className="button" label="Submit" type="submit">
               {" "}
@@ -78,13 +90,23 @@ const Contact = () => {
       </form>
 
       <div className="info">
-        <button onClick={() => (window.location.href = "954-806-6996")}>
-          <img src="src/assets/phone.png" className="phone" />
+        <button onClick={() => (window.location.href = "tell: 954-806-6996")}>
+          <img src={phoneIcon} className="phone" />
         </button>
-        <img src="src/assets/gmail.png" className="email"/>
+        <img src={gmailIcon} className="email"/>
 
-        <a href="mailto: tiearraf85@gmailcom">tiearraf85@gmail.com</a>/
+        <a href="mailto:tiearraf85@gmailcom">tiearraf85@gmail.com</a>/
       </div>
+
+      {showModal && (
+        <div className="modal-overlay">
+          <div className="modal-content">
+            <h2>Message Sent!</h2>
+            <p>Thank you for contacting me. I'll get back to you soon.</p>
+            <button onClick={() => setShowModal(false)}>Close</button>
+          </div>
+        </div>
+      )}
     </>
   );
 };
