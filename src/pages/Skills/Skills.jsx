@@ -5,7 +5,7 @@ export default function Skills() {
     return (
         <>
         <Nav/>
-        
+        <div className="background">
         <div className="skills">
             <h1>Skills</h1>
             <div className="mySkills">
@@ -41,7 +41,7 @@ export default function Skills() {
             <img src='src/assets/React.png'/>
         </button>
         </div>
-       
+       </div>
     </div>
        </>
     )

@@ -1,13 +1,18 @@
 import React from "react";
 import Nav from "../../components/Navbar/Nav";
 import "./Home.css";
-// import { Link } from "react-router-dom";
+
+
 
 export default function Home() {
 
     return ( 
         <>
+        
          <Nav />
+
+       
+         <div className="background">
         <div className="home">
         
     
@@ -39,7 +44,8 @@ export default function Home() {
 
        </div>
        </div>
+    </div>
        </>
     )
 
-}
+};

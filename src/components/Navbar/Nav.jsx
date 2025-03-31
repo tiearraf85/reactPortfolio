@@ -15,12 +15,14 @@ export default function Nav() {
     {name: "Home", path: "/"},
     {name: "About", path: "/about"},
     {name: "Skills", path: "/skills"},
-    {name: "Projests", path: "/projests"},
-    {name: "Contant", path: "/contact"},
+    {name: "Projects", path: "/projects"},
+    {name: "Contact", path: "/contact"},
   ];
 
   return (
     <>
+
+
      
       <nav className="nav">
         <div className="nav-links desktop-nav">
@@ -48,7 +50,7 @@ export default function Nav() {
           )}
         </div>
       </nav>
-      
+    
       
       
       

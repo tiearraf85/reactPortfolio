@@ -35,7 +35,9 @@ const Contact = () => {
   return (
     <>
     <Nav />
+    
       <form onSubmit={sendEmail} ref={form}>
+        <div className="title">
         <div className="contact">
           <h1>Contact Me</h1>
 
@@ -86,6 +88,7 @@ const Contact = () => {
               Submit
             </button>
           </div>
+        </div>
         </div>
       </form>
 

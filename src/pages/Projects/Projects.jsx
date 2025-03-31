@@ -7,6 +7,7 @@ export default function Projects() {
     <>
       <Nav />
 
+<div className='background'>
       <div className="projects">
         <h1>Projects</h1>
         <p>My projects are up to date and user friendly.</p>
@@ -18,6 +19,7 @@ export default function Projects() {
             <img src='src/assets/calcVS.png'/>
             <img src="src/assets/CalculatorApp.png" />
         </div> 
+      </div>
       </div>
     </>
   );

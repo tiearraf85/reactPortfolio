@@ -1,14 +1,22 @@
-  h1 {
+  /* h1 {
    
     
   font-size: 5rem;
 }
 
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+
+
 body {
   background-image: url("src/assets/alexandru-acea-XEB8y0nRRP4-unsplash.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  /* padding: 2rem; */
+  background-size: center;
   
 }
 
@@ -22,7 +30,6 @@ body {
 .aboutMe {
   display: flex;
   flex-direction: column;
-  /* font-size: ch; */
   font-weight: bold;
   padding: 2rem;
 }
@@ -42,4 +49,75 @@ body {
         padding: 0;
     }
   }
+} */
+
+
+/*  */
+
+
+
+
+
+
+
+/* About section layout */
+.about {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 2rem;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7); /* optional for better contrast */
 }
+
+/* Text content */
+.aboutMe {
+  max-width: 800px;
+  font-weight: bold;
+}
+
+.aboutMe h1 {
+  font-size: 5rem;
+  margin: 0 0 1rem 0;
+}
+
+.aboutMe p {
+  font-size: 1.5rem;
+  line-height: 1.6;
+}
+
+/* Responsive Styles */
+@media (max-width: 1680px) {
+  .aboutMe {
+    width: 60%;
+  }
+}
+
+@media (max-width: 768px) {
+  .aboutMe h1 {
+    font-size: 3rem;
+  }
+
+  .aboutMe p {
+    font-size: 1.rem;
+  }
+
+  .aboutMe {
+    width: 90%;
+  }
+}
+/* 
+@media (max-width: 400px) {
+  .aboutMe h1 {
+    font-size: 2rem;
+  }
+
+  .aboutMe p {
+    font-size: 0.9rem;
+  }
+
+  .aboutMe {
+    width: 100%;
+    padding: 1rem;
+  }
+} */
+

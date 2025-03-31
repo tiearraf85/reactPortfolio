@@ -5,12 +5,17 @@ export default function About() {
   return (
     <>
     <Nav/>
+
+    <div className="background">
+  
       <div className="about">
-        <h1>About Me</h1>
         <div className="aboutMe">
+        <h1>About Me</h1>
+        
           <p>Hi,</p>
           <p>
-            {" "}
+        
+            
             I'm Tiearra Westbrook, a passionate Full Stack Developer with a love
             for coding and creating innovative solutions. With a background in
             web development, I specialize in building dynamic and user-friendly
@@ -22,6 +27,7 @@ export default function About() {
           </p>
         </div>
       </div>
+    </div>
     </>
   );
 }

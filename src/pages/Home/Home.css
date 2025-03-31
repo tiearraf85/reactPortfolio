@@ -1,4 +1,13 @@
 
+/* Make sure body/html and container fill full height */
+ body{
+    background-image: url('src/assets/alexandru-acea-XEB8y0nRRP4-unsplash.jpg'); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
 
 
 .middleSection h1 {
@@ -60,6 +69,7 @@ h2 {
 }
 
 .facePic {
+    object-fit: cover;
     padding-bottom: 9rem;
     border-radius: 50%;
     height: 50%;
