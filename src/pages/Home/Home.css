@@ -1,141 +1,138 @@
-
 /* Make sure body/html and container fill full height */
- body{
-    background-image: url('src/assets/alexandru-acea-XEB8y0nRRP4-unsplash.jpg'); 
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-
+body {
+  background-image: url("src/assets/alexandru-acea-XEB8y0nRRP4-unsplash.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
-
-
 
 .middleSection h1 {
-    display: flex;
-    /* justify-content: center; */
-    /* align-items: center; */
-    flex-direction: column;
-    gap: 20px;
-    /* padding: 20; */
-    /* padding-top: 5rem; */
-    /* margin: 0 auto; */
-    font-size: 7rem;
-    font-weight: bold;
-    color: rgb(1, 1, 1);
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
-    font-style: italic;
-    
+  display: flex;
+  flex-direction: column;
+ gap: 20px;
+  color: rgb(1, 1, 1);
+  font-size: 7rem;
+  font-weight: bold;
+  color: rgb(1, 1, 1);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  font-style: italic;
+  justify-content: center; 
+  align-items: center; 
 }
-
-h1, .name {
-    margin: 0 auto;
+h1,
+.name {
+  margin: 0 auto;
 }
 
 h2 {
-    padding-left: 12rem;
+  padding-left: 12rem;
 }
 
 .name {
-    display: flex;
-    /* justify-content: flex-end; */
-    /* align-items: center; */
-    font-size: 2.5rem;
+    display: block;
+    font-size: 2rem;
     font-weight: bold;
-    color: darkgreen;
-    padding-right: 10rem;
-
+    color: darkgreen;   
+    padding-right: 0rem;
 
 }
- 
+
 .socials {
-    /* display: flex; */
-    /* justify-content: flex-end; */
-    gap: 20px;
-    padding-right: 10rem;
-    
+  display: flex; 
+  justify-content: center;
+   gap: 10px;
+  padding-right: 1rem 0; 
 }
 
-.linkedin, .github {
-    background: none;
-    border: none;
+.linkedin,
+.github {
+  background: none;
+  border: none;
 }
 
-
-.pic{
-    /* display: flex; 
-    justify-content: center;   */
-    border-radius: 50%;
-
+.pic {
+  
+  border-radius: 50%;
 }
 
 .facePic {
-    object-fit: cover;
-    padding-bottom: 9rem;
-    border-radius: 50%;
-    height: 50%;
-    width: 100%;
+  object-fit: cover;
+  padding-bottom: 3rem;
+  border-radius: 50%;
+   height: auto;
+   width: auto;
 }
 
 .home {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
-/* @media (max-width: 1800px) {
-    .facePic {
-        width: 100%;
+
+
+  @media (max-width: 770px) {
+    body {
+      background-image: url("src/assets/alexandru-acea-XEB8y0nRRP4-unsplash.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
     }
-   
-} */
-
-
-@media (max-width: 520px) {
-
-    .home {
-        display: grid;
-        grid-template-columns: 1fr;
-        justify-content: center;
-    }
+  
     .middleSection h1 {
-        font-size: 3rem;
-        /* padding-top: 5rem; */
-
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      font-size: 4rem; /* Reduced size for smaller screens */
+      font-weight: bold;
+      color: rgb(1, 1, 1);
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+      font-style: italic;
+      text-align: center;
     }
-
-    
-        .middleSection{
-            display: grid;
-            justify-content: center;
-
-        }
-
-        .socials {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            padding-left: 2rem;
-            width: .5rem;
-            
-        
-            
-
-        }
-        .name {
-        display: flex;
-        justify-content: center;
-        font-size: 1.5rem;
+  
+    h1,
+    .name {
+      margin: 0 auto;
     }
-     .facePic{ 
-        width: 100%;
-        height: auto;
-        
-    } 
-
+  
+    h2 {
+      padding-left: 4rem; /* Reduced padding for smaller screens */
+    }
+  
+    .name {
+      display: flex;
+      font-size: 2rem; /* Adjusted for smaller screens */
+      font-weight: bold;
+      color: darkgreen;
+      padding-right: 2rem; /* Reduced right padding */
+    }
+  
+    .socials {
+      gap: 10px; /* Adjusted spacing */
+      padding-right: 2rem; /* Reduced padding */
+    }
+  
+    .linkedin,
+    .github {
+      background: none;
+      border: none;
+    }
+  
     .pic {
-        display: flex;
-        justify-content: center;
+      border-radius: 50%;
     }
-    
+  
+    .facePic {
+      object-fit: cover;
+      padding-bottom: 5rem; /* Adjusted padding */
+      border-radius: 50%;
+      height: 40%; /* Adjusted size */
+      width: 100%;
+    }
+  
+    .home {
+      display: block; /* Stack elements on smaller screens */
+    }
+  }
+  
 
-
-
-}
