@@ -1,6 +1,7 @@
 import React from "react";
 import "./Projects.css";
 import Nav from "../../components/Navbar/Nav";
+import Footer from "../../components/Footer/Footer"; // Ensure Footer is imported correctly
 
 export default function Projects() {
   return (
@@ -21,6 +22,7 @@ export default function Projects() {
         </div> 
       </div>
       </div>
+      <Footer />
     </>
   );
 }

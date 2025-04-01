@@ -1,6 +1,7 @@
 import React from "react";
 import Nav from "../../components/Navbar/Nav";
 import "./Home.css";
+import Footer from "../../components/Footer/Footer";
 
 
 
@@ -41,10 +42,14 @@ export default function Home() {
           <div className="pic"> 
          <img src="./src/assets/work.jpg" className="facePic" alt="work" />
 
-
+  
        </div>
-       </div>
+       </div> 
     </div>
+        
+     <Footer />
+    
+
        </>
     )
 

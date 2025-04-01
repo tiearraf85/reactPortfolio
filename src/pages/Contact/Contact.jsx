@@ -4,6 +4,10 @@ import Nav from '../../components/Navbar/Nav';
 import emailjs from "@emailjs/browser";
 import phoneIcon from '../../assets/phone.png';
 import gmailIcon from '../../assets/gmail.png';
+import Footer from "../../components/Footer/Footer";
+
+
+// Ensure emailjs is initialized correctly
 const Contact = () => {
   const form = useRef();
   const [fname, setFname] = useState("");
@@ -110,6 +114,8 @@ const Contact = () => {
           </div>
         </div>
       )}
+
+      <Footer />
     </>
   );
 };
