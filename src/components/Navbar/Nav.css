@@ -1,11 +1,23 @@
-/* --- General Navigation Styles --- */
-
 
 .nav {
-    padding: 1rem;
+    /* padding: 1rem; */
     position: sticky;
     top: 0;
   }
+
+  .nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .nav-logo {
+    font-size: .9rem;
+    border-radius: 50%;
+    
+  }
+
+
   
   /* Reusable button style */
   .top {
@@ -25,7 +37,7 @@
   
   .top a {
     text-decoration: none;
-    color: white;
+    color: inherit;
     display: block;
     width: 100%;
   }
@@ -37,8 +49,11 @@
   /* --- Desktop Navigation --- */
   .desktop-nav {
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    justify-content: flex-end;
+
+  
+    
+  
   }
   
   /* --- Mobile Navigation --- */

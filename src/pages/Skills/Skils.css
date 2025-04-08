@@ -1,9 +1,24 @@
 
 
-.mySkills {
+.mySkills  {
     font-size: 1.4rem;
-    
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7)
 }
+
+.mySkills p{
+   text-align: left;
+   width: 100%;
+   max-width: 800px;
+   margin: 0 auto 0 0;
+   padding: 1rem;
+
+
+}
+
+
+
+
+
 
 
 .buttons {
@@ -32,3 +47,12 @@
 
 
 
+@media (min-width: 768px) {
+    .mySkills{
+      width: 100%;
+      margin: 0 auto;
+      text-align: le;
+    }
+
+   
+}
