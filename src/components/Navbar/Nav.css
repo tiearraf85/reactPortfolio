@@ -3,18 +3,27 @@
     /* padding: 1rem; */
     position: sticky;
     top: 0;
+    background-color: rgb(156, 151, 138);
+
   }
 
-  .nav-container {
+  .nav-container{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-right: 2rem;
   }
 
-  .nav-logo {
-    font-size: .9rem;
-    border-radius: 50%;
-    
+  .home-page{
+    padding-left: 3rem;
+    font-family: 'Brush Script MT', cursive;
+   
+  }
+
+  button {
+    background: none;
+    border: none;
+    cursor: pointer;
   }
 
 
@@ -51,14 +60,11 @@
     display: flex;
     justify-content: flex-end;
 
-  
-    
-  
   }
   
   /* --- Mobile Navigation --- */
   .mobile-nav {
-    display: none;
+    display: none; 
     position: relative;
   }
   
@@ -66,8 +72,8 @@
   .hamburger {
     background: none;
     border: none;
-    font-size: .2rem;
-    color: white;
+    font-size: 2rem;
+    color: brown;
     cursor: pointer;
     padding: 0.5rem;
     float: right;

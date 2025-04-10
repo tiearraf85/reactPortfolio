@@ -1,97 +1,58 @@
-/* Make sure body/html and container fill full height */
-body {
-  background-image: url("src/assets/alexandru-acea-XEB8y0nRRP4-unsplash.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+.typewriter-container {
+  padding-top: 2rem;
+  padding-left: 3rem;
+  font-size: 2rem;
+  color: brown
 }
 
-.middleSection h1 {
-  display: flex;
-  flex-direction: column;
- gap: 20px;
-  color: rgb(1, 1, 1);
-  font-size: 7rem;
-  font-weight: bold;
-  color: rgb(1, 1, 1);
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
-  font-style: italic;
-  justify-content: center; 
-  align-items: center; 
+.home-content {
+  display: flex; 
+  padding-left: 3rem;
+
+} 
+
+.nav-logo {
+  padding-right: 5rem;
+  width: 25%;
+  border-radius: 15px;
+
+
 }
-h1,
-.name {
+
+h2, .description, .projects-description, .about-description {
+  padding: 1rem;
+}
+
+.about-description, .about-title {
+  text-align: left;
+  width: 100%;
+  max-width: 800px;
   margin: 0 auto;
-}
-
-h2 {
-  padding-left: 12rem;
 }
 
 .name {
     display: block;
     font-size: 2rem;
-    font-weight: bold;
-    color: darkgreen;   
+    font-weight: bold;   
     padding-right: 0rem;
 
 }
 
-.socials {
-  display: flex; 
-  justify-content: center;
-   gap: 10px;
-  padding-right: 1rem 0; 
-}
-
-.linkedin,
-.github {
-  background: none;
-  border: none;
-}
-
-.pic {
-  
-  border-radius: 50%;
-}
-
-.facePic {
-  object-fit: cover;
-  padding-bottom: 3rem;
-  border-radius: 50%;
-   height: auto;
-   width: auto;
-}
-
-.home {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+.description {
+  text-align: left;  
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto 0 0;
+  padding: 1rem; 
 }
 
 
 
   @media (max-width: 770px) {
-    body {
-      background-image: url("src/assets/alexandru-acea-XEB8y0nRRP4-unsplash.jpg");
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center;
-    }
+    
   
-    .middleSection h1 {
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
-      font-size: 4rem; /* Reduced size for smaller screens */
-      font-weight: bold;
-      color: rgb(1, 1, 1);
-      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
-      font-style: italic;
-      text-align: center;
-    }
   
-    h1,
-    .name {
+    h1, .name {
       margin: 0 auto;
     }
   
@@ -103,36 +64,28 @@ h2 {
       display: flex;
       font-size: 2rem; /* Adjusted for smaller screens */
       font-weight: bold;
-      color: darkgreen;
       padding-right: 2rem; /* Reduced right padding */
     }
   
-    .socials {
-      gap: 10px; /* Adjusted spacing */
-      padding-right: 2rem; /* Reduced padding */
-    }
-  
-    .linkedin,
-    .github {
-      background: none;
-      border: none;
-    }
-  
-    .pic {
-      border-radius: 50%;
-    }
-  
-    .facePic {
-      object-fit: cover;
-      padding-bottom: 5rem; /* Adjusted padding */
-      border-radius: 50%;
-      height: 40%; /* Adjusted size */
-      width: 100%;
-    }
-  
-    .home {
-      display: block; /* Stack elements on smaller screens */
-    }
-  }
-  
 
+  }
+
+
+  @media (max-width: 500px) {
+
+h2 {
+    font-size: 16px;
+    padding-left: .05rem; /* Further reduced padding for very small screens */
+
+  }
+
+  p {
+    text-align: center;
+  }
+
+  .name {
+    display: none;
+  }
+
+  
+  }
