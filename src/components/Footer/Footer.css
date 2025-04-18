@@ -1,10 +1,28 @@
 .footer {
-    color: white;
+   display: flex;
+    justify-content: space-between;
+    color: whitesmoke;
+    background-color: black;
     text-align: center;
     padding: 20px;
     position: relative;
     bottom: 0;
     font-size: .5rem;
     font-weight: bold;
+    
+}
 
+.logo2 {
+    padding: 2rem;
+    padding-left: 3rem;
+}
+
+.bottom {
+    display: flex;
+    align-items: end;
+
+}
+
+.links {
+    padding-right: 3rem;
 }

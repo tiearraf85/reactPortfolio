@@ -1,6 +1,5 @@
 /* About section layout */
 .about {
-  background-color: rgb(255, 205, 205);
   display: flex;
   flex-direction: column;
   width: 100%;

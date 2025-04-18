@@ -1,6 +1,7 @@
 import "./About.css";
 import Nav from '../../components/Navbar/Nav';
 import Footer from "../../components/Footer/Footer";
+import Certificate from "../../components/Certificate/Certificate";
 
 
 export default function About() {
@@ -28,9 +29,10 @@ export default function About() {
             together to make a positive impact through technology.
           </p>
         </div>
+        <Certificate/>
       </div>
     </div>
-    <Footer />
+ 
     </>
   );
 }

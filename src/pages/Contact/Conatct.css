@@ -2,7 +2,7 @@ form {
   background-color: aliceblue;
   /* padding: 1rem; */
   border-radius: 5%;
-  height: 36rem;
+  height: 40rem;
   width: 30rem;
   margin: auto;
   margin-top: 2rem;
@@ -98,11 +98,15 @@ textarea.message {
   cursor: pointer;
 }
 
+textarea {
+  width: 15rem
+}
+
 @media screen and (max-width: 480px) {
   form {
     background-color: white;
     border-radius: 5%;
-    height: 36rem;  
+    height: 37rem;  
     width: 20rem;
     margin: auto;
     margin-top: 2rem;

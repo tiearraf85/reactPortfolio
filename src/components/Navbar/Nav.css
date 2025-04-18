@@ -26,6 +26,8 @@
     cursor: pointer;
   }
 
+  
+
 
   
   /* Reusable button style */
@@ -83,35 +85,44 @@
   
   /* Dropdown menu */
   .dropdown-menu {
-    display: flex;
-    flex-direction: column;
+    /* display: flex;
+    flex-direction: column; */
     background-color: none;
-    gap: 0.5rem;
-    padding: 1rem;
-    margin-top: 0.5rem;
-    /* border-top: 1px solid white; */
-    /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); */
-    z-index: 999;
+    /* gap: 0.5rem; */
+    /* padding: 1rem; */
+    /* margin-top: 0.5rem; */
+    border-top: 1px solid white; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    /* z-index: 999; */
   }
   
   /* Make mobile buttons full width */
   .dropdown-menu .top {
     width: 50%;
-    text-align: left;
+    text-align: center;
   }
   
   /* --- Responsive Rules --- */
   @media (max-width: 468px) {
+    
     .desktop-nav {
       display: none;
     }
   
     .mobile-nav {
       display: block;
+
+
     }
 
     .hamburger {
       display: block;
+    }
+  }
+
+  @media (max-width: 370px) {
+    .home-page {
+      padding-left: 1rem;
     }
   }
   

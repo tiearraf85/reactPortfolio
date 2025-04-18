@@ -3,7 +3,6 @@ import React, { useRef, useState } from "react";
 import Nav from '../../components/Navbar/Nav';
 import emailjs from "@emailjs/browser";
 import phoneIcon from '../../assets/phone.png';
-import gmailIcon from '../../assets/gmail.png';
 import Footer from "../../components/Footer/Footer";
 
 
@@ -38,7 +37,7 @@ const Contact = () => {
   };
   return (
     <>
-    <Nav />
+    {/* <Nav /> */}
     
       <form onSubmit={sendEmail} ref={form}>
         <div className="title">
@@ -100,9 +99,7 @@ const Contact = () => {
         <button onClick={() => (window.location.href = "tell: 954-806-6996")}>
           <img src={phoneIcon} className="phone" />
         </button>
-        <img src={gmailIcon} className="email"/>
 
-        <a href="mailto:tiearraf85@gmailcom">tiearraf85@gmail.com</a>/
       </div>
 
       {showModal && (
@@ -115,7 +112,7 @@ const Contact = () => {
         </div>
       )}
 
-      <Footer />
+
     </>
   );
 };

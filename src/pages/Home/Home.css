@@ -11,13 +11,21 @@
 
 } 
 
-.nav-logo {
+.logo {
   padding-right: 5rem;
   width: 25%;
   border-radius: 15px;
-
+}
+.about-button {
+  background-color: pink;
+  width: 15%;
+  padding: .8rem;
+  border-radius: 5px;
+  font-weight: bold;
 
 }
+
+
 
 h2, .description, .projects-description, .about-description {
   padding: 1rem;
@@ -30,13 +38,7 @@ h2, .description, .projects-description, .about-description {
   margin: 0 auto;
 }
 
-.name {
-    display: block;
-    font-size: 2rem;
-    font-weight: bold;   
-    padding-right: 0rem;
 
-}
 
 .description {
   text-align: left;  
@@ -46,32 +48,148 @@ h2, .description, .projects-description, .about-description {
   padding: 1rem; 
 }
 
+.technologies {
+  background-color:  rgb(156, 151, 138);
+}
+
+.technologies, p, h1{
+  text-align: center;
+
+}
+
+.tech-icons {
+  display: flex;  
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  font-size: 6rem;
+  gap: 2rem;
+}
 
 
-  @media (max-width: 770px) {
+.expanding-icons {
+  display: flex;  
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  font-size: 6rem;
+  gap: 2rem;
+ 
+}
+
+.nextjs-icon {
+ background-color:aliceblue;
+ border-radius: 50%;
+ color:rgb(156, 151, 138)
+}
+
+.mongodb-icon {
+  color: green;
+}
+
+
+.html-icon {
+  color: brown;
+}
+
+.js-icon {
+  color: rgb(255, 221, 51);
+}
+
+.css-icon {
+  color: blue;
+}
+
+
+.projects-title {
+  text-align: left;
+  padding-left: 3rem;
+}
+
+.contacts {
+  background-color:  rgb(156, 151, 138);
+}
+
+
+
+
+
+
+
+  @media (max-width: 820px) {
     
+  .logo {
+    height: fit-content                   
+  }
+
+  .about-button{
+    width: 100%;
+    padding: .5rem;
+  }
   
-  
-    h1, .name {
-      margin: 0 auto;
-    }
   
     h2 {
-      padding-left: 4rem; /* Reduced padding for smaller screens */
+      font-size: 20px;
+       padding-left: 1rem; /*Reduced padding for smaller screens */
     }
-  
-    .name {
-      display: flex;
-      font-size: 2rem; /* Adjusted for smaller screens */
-      font-weight: bold;
-      padding-right: 2rem; /* Reduced right padding */
+
+    .typewriter-container{
+      padding-right: 2rem;
+      font-size: 1.5rem;
     }
+
+    
+.tech-icons {
+  display: flex;  
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  font-size: 8rem;
+  gap: 1rem;
+
+}
+
+.expanding-icons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;  
+  padding: 1rem;
+  font-size: 8rem;
+  gap: 1rem;
   
+  }
+
+}
+
+/* .project-title {
+  font-size: 3rem
+} */
+
+  .project-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 1rem;
+    gap: 6rem;
 
   }
 
+  .pricing-link {
+    padding-bottom: 4rem;
+    
+   
+  } 
 
-  @media (max-width: 500px) {
+  .about {
+    background-color: rgb(156, 151, 138);
+  }
+
+  
+
+
+  @media (max-width: 770px) {
 
 h2 {
     font-size: 16px;
@@ -79,13 +197,62 @@ h2 {
 
   }
 
+  
+
   p {
     text-align: center;
   }
 
-  .name {
-    display: none;
+ .home-content { 
+   font-size: 18px;
+    
   }
 
-  
+  .logo {
+    display: none;
+   /* height: fit-content;
+   width: 100%;
+    padding-right: 0; */
   }
+
+  .typewriter-container{
+
+    padding-left: 1rem;
+    font-size: 1.5rem;
+  }
+
+  .about-button {
+    width: 100%;
+    padding: .5rem;
+  }
+
+  .project-links {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+
+} 
+
+@media (max-width: 370px) {
+  .typewriter-container {
+    font-size: 1.2rem;
+  }
+  
+  .home-content, .description, .seDescription { 
+    font-size: 16px;
+  }
+
+  h2 {
+    font-size: 14px;
+    padding-left: .05rem; /* Further reduced padding for very small screens */
+  }
+
+  .project-links {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+
+}
