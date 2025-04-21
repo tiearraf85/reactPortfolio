@@ -3,10 +3,11 @@ form {
   /* padding: 1rem; */
   border-radius: 5%;
   height: 40rem;
-  width: 30rem;
+  width: 90%;
+  max-width: 30rem;
   margin: auto;
   margin-top: 2rem;
-  /* padding-bottom: 3rem; */
+  padding-bottom: 1rem;
 }
 
 h1 {
@@ -102,7 +103,7 @@ textarea {
   width: 15rem
 }
 
-@media screen and (max-width: 480px) {
+@media (max-width: 480px) {
   form {
     background-color: white;
     border-radius: 5%;
@@ -142,7 +143,7 @@ textarea {
 
 
   textarea.message {
-    min-height: 100px;
+   width: 15rem;
     resize: initial;
   }
 

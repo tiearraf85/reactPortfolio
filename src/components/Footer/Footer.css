@@ -1,19 +1,25 @@
 .footer {
    display: flex;
     justify-content: space-between;
-    color: whitesmoke;
-    background-color: black;
     text-align: center;
     padding: 20px;
-    position: relative;
-    bottom: 0;
-    font-size: .5rem;
-    font-weight: bold;
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     
 }
 
+
+
+
+.download {
+    font-size: 1.5rem;
+}
+
+
 .logo2 {
-    padding: 2rem;
     padding-left: 3rem;
 }
 
@@ -26,3 +32,56 @@
 .links {
     padding-right: 3rem;
 }
+
+a { 
+    color: black;
+    padding: 1rem;
+}
+
+.contact-item {
+    padding-bottom: 1rem;
+}
+
+h2 {
+    font-size: larger;
+}
+
+
+
+  
+  
+  /* Optional: side-by-side on larger screens */
+  @media (min-width: 640px) {
+    .contact-info {
+      flex-direction: row;
+      
+    }
+  }
+  
+
+@media (max-width: 768px) {
+    .footer {
+        grid-template-columns: 1fr;
+
+        text-align: center;
+        padding: 15px;
+    }
+
+    .logo2 {
+        padding-left: 0;
+        margin-bottom: 10px;
+    }
+
+    .links {
+        padding-right: 0;
+        margin-top: 10px;
+    }
+
+   a {
+    font-size: small;
+   }
+}
+  
+  
+  
+  
