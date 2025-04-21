@@ -2,8 +2,7 @@ import "./Conatct.css";
 import React, { useRef, useState } from "react";
 import Nav from '../../components/Navbar/Nav';
 import emailjs from "@emailjs/browser";
-import phoneIcon from '../../assets/phone.png';
-import Footer from "../../components/Footer/Footer";
+
 
 
 // Ensure emailjs is initialized correctly
@@ -95,12 +94,8 @@ const Contact = () => {
         </div>
       </form>
 
-      <div className="info">
-        <button onClick={() => (window.location.href = "tell: 954-806-6996")}>
-          <img src={phoneIcon} className="phone" />
-        </button>
-
-      </div>
+     
+      
 
       {showModal && (
         <div className="modal-overlay">

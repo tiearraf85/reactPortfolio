@@ -103,97 +103,49 @@ textarea {
   width: 15rem
 }
 
-@media (max-width: 480px) {
-  form {
-    background-color: white;
-    border-radius: 5%;
-    height: 37rem;  
-    width: 20rem;
-    margin: auto;
-    margin-top: 2rem;
-  }
-  
+
+@media (max-width: 600px) {
   h1 {
-    font-size: 4rem;
+    font-size: 2.5rem;
     text-align: center;
   }
 
+  form {
+    height: auto;
+    padding: 1rem;
+    border-radius: 10px;
+    background-color: white;
+
+  }
+
   .form-group {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 1rem;
-  }
-
-  input {
-    max-width: 10rem;
-  }
-
-  .contact {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
-    
+    align-items: center;
+  }
+
+  input,
+  textarea {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .email,
+  .phone {
+    width: 100%;
   }
 
   .info {
-    display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
   }
-
-
-  textarea.message {
-   width: 15rem;
-    resize: initial;
-  }
-
-  .email {
-    width: 2rem;
-  }
-
-  .phone {
-    width: 2rem;
-  }
-
 
   .button {
-    background: none;
-    border: none;
-    background-color: goldenrod;
-    border-radius: 5%;
-    padding: 0.5rem 2rem 0.5rem 2rem;
-  }
-
-  .submitButton {
-    display: flex;
-    justify-content: center;
-  }
-
-  .modal-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
     width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.6);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 999;
+    padding: 0.75rem;
   }
 
-  .modal-content h2 {
-    margin-bottom: 10px;
+  .modal-content {
+    width: 95%;
+    /* padding: 1.5rem; */
   }
-
-  .modal-content button {
-    margin-top: 20px;
-    padding: 10px 20px;
-    background-color: goldenrod;
-    color: white;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-  }
-  
 }
