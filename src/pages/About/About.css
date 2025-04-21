@@ -1,16 +1,10 @@
-/* About section layout */
+
 .about {
   display: flex;
   flex-direction: column;
-  width: 100%;
   padding: 2rem;
 }
 
-/* Text content */
-.aboutMe {
-  max-width: 800px;
-  font-weight: bold;
-}
 
 .aboutMe h1 {
   font-size: 5rem;
@@ -22,39 +16,75 @@
   line-height: 1.6;
 }
 
-/* Responsive Styles */
-@media (max-width: 1680px) {
-  .aboutMe {
-    width: 60%;
-  }
+.aboutMe {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  
 }
 
-@media (max-width: 768px) {
-  .aboutMe h1 {
-    font-size: 3rem;
-  }
 
-  .aboutMe p {
-    font-size: 1.rem;
+
+/* Mobile-first styles */
+.background {
+  padding: 16px;
+  display: flex;
+  justify-content: center;
+  background-color: #f9f9f9;
+}
+
+.about {
+  max-width: 600px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.aboutMe {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.logo {
+  width: 120px;
+  height: auto;
+  border-radius: 50%;
+}
+
+.about h1 {
+  font-size: 28px;
+  margin: 0;
+}
+
+.about p {
+  font-size: 16px;
+  line-height: 1.6;
+  padding: 0 12px;
+}
+
+/* Responsive enhancements for larger screens */
+@media (min-width: 768px) {
+  .about {
+    text-align: left;
+    align-items: flex-start;
+    padding: 32px;
   }
 
   .aboutMe {
-    width: 90%;
+    flex-direction: row;
+    gap: 24px;
+  }
+
+  .about h1 {
+    font-size: 36px;
+  }
+
+  .about p {
+    font-size: 18px;
   }
 }
-/* 
-@media (max-width: 400px) {
-  .aboutMe h1 {
-    font-size: 2rem;
-  }
-
-  .aboutMe p {
-    font-size: 0.9rem;
-  }
-
-  .aboutMe {
-    width: 100%;
-    padding: 1rem;
-  }
-} */
-
