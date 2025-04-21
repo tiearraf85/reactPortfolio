@@ -2,9 +2,9 @@ import "./Conatct.css";
 import React, { useRef, useState } from "react";
 import Nav from '../../components/Navbar/Nav';
 import emailjs from "@emailjs/browser";
-
-
-
+import { CiLinkedin } from "react-icons/ci";
+import { FaGithub } from "react-icons/fa";
+import { FaFacebook } from "react-icons/fa";
 // Ensure emailjs is initialized correctly
 const Contact = () => {
   const form = useRef();
@@ -91,10 +91,19 @@ const Contact = () => {
             </button>
           </div>
         </div>
+       
         </div>
       </form>
 
-     
+<div className="social-buttons">
+  <a href="https://www.linkedin.com/in/tiearra-westbrook-762024351/" target="_blank" rel="noopener nonreferrer">
+ <button className='social-btn'><CiLinkedin /> LinkedIn</button>
+ </a>
+ <a href="https://github.com/tiearraf85">
+ <button className='social-btn'><FaGithub /> GitHub</button>
+ </a>
+ <button className='social-btn'><FaFacebook />Facebook</button> 
+</div>
       
 
       {showModal && (

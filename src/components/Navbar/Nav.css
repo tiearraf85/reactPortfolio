@@ -35,11 +35,7 @@
     background: transparent;
     background-color: rgb(156, 151, 138);
     border: none;
-    color: white;
-    padding-left: 40px;
-    padding-right: 40px;
-    padding-bottom: 10px;
-    padding-top: 10px;
+    color: white; 
     border-radius: 6px;
     margin: 0 0.5rem;
     cursor: pointer;
@@ -104,6 +100,7 @@
   
   /* --- Responsive Rules --- */
   @media (max-width: 468px) {
+
     
     .desktop-nav {
       display: none;
@@ -120,10 +117,15 @@
     }
   }
 
+  
+  
+
   @media (max-width: 370px) {
     .home-page {
       padding-left: 1rem;
     }
+
+
   }
   
 
