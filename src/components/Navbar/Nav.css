@@ -1,47 +1,123 @@
 
-
 .nav {
     position: sticky;
     top: 0;
-    overflow: hidden;
-    background-color: black;
+    background-color: rgb(156, 151, 138);
+
+  }
+
+  
+
+  .nav-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .home-page{
+    font-family: 'Brush Script MT', cursive;
+    padding-left: 2rem;
+   
+  }
+
+  button {
+    background: none;
+    border: none;
+  
+
+  }
+  
+  /* Reusable button style */
+  .top {
+    border: none;
+    color: white; 
+    border-radius: 6px;
+    margin: 0 0.5rem;
+    
+  }
+  
+  .top a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    width: 100%;
+  }
+  
+  .top:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    padding-right: 2rem;
+  }
+  
+  /* --- Desktop Navigation --- */
+  .desktop-nav {
     display: flex;
     justify-content: flex-end;
-    padding: 20px;
-    gap: 20px;
+    padding-right: 5rem;
 
-}
-
-
-
-.top {
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 10px;
-    padding-top: 10px;
-    border-radius: 5px;
-    background-color: goldenrod;
-    color: white;
+  }
+  
+  /* --- Mobile Navigation --- */
+  .mobile-nav {
+    display: none; 
+    position: relative;
+  }
+  
+  /* Hamburger menu button */
+  .hamburger {
+    background: none;
     border: none;
-    font-weight: bold;  
+    font-size: 2rem;
+    color: brown;
     cursor: pointer;
+    padding: 0.5rem;
+    float: right;
+  }
+
+
+  
+  /* Dropdown menu */
+  .dropdown-menu {
+   position: absolute;
+   right: 0;
+   width: 30%;
+    border-top: 1px solid white; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    z-index: 10;
+  }
+
+  .dropdown-menu .top {
+    width: 50%;
+    text-align: center;
+  }
+  
+  /* --- Responsive Rules --- */
+  @media (max-width: 768px) {
+
+  
     
-}
-
-.top:hover {
-    background-color: #ffcc00;
-    
-}
-
-@media (max-width: 520px) {
-    .nav {
-        flex-direction: column;
-        align-items: center;
+    .desktop-nav {
+      display: none;
     }
-    .top {
-        width: 50%;
-        
+  
+    .mobile-nav {
+      display: block;
+
+
     }
-}
+
+    .hamburger {
+      display: block;
+    }
+  }
+
+  
+  
 
 
+
+
+
+
+
+
+  

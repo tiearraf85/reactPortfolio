@@ -1,0 +1,82 @@
+
+.about{
+  display: flex;
+  flex-direction: column;
+
+  padding: 2rem;
+}
+
+
+.aboutMe h1 {
+  font-size: 5rem;
+  margin: 0 0 1rem 0;
+}
+
+ 
+.aboutMe {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  
+}
+
+
+
+/* Mobile-first styles */
+.background {
+  font-family: monospace;
+  padding: 16px;
+  display: flex;
+  justify-content: center;
+  background-color: #f9f9f9;
+}
+
+.about {
+  max-width: 600px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.aboutMe {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.about h1 {
+  font-size: 28px;
+  margin: 0;
+}
+
+.about p {
+  font-size: 16px;
+  line-height: 1.6;
+  padding: 0 12px;
+}
+
+/* Responsive enhancements for larger screens */
+@media (min-width: 768px) {
+  .about {
+    text-align: left;
+    align-items: flex-start;
+    padding: 32px;
+  }
+
+  .aboutMe {
+    flex-direction: row;
+    gap: 24px;
+  }
+
+  .about h1 {
+    font-size: 36px;
+  }
+
+  .about p {
+    font-size: 18px;
+  }
+}

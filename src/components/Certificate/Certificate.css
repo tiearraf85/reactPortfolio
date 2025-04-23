@@ -1,0 +1,39 @@
+.certificate-container {
+  background-color:rgb(156, 151, 138);
+ 
+
+}
+
+.certificate-grid{
+  text-align: center;
+  font-size: 2em;
+  color: #fff;
+  padding: 20px;
+  
+}
+
+
+
+
+@media (max-width: 600px) {
+
+  .certificate-title {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  
+  
+  
+.certificate-grid img {
+    max-width: 250px;
+   
+  }
+  
+  
+.certificate-content {
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+}
