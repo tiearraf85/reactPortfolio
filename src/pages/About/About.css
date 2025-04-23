@@ -1,7 +1,8 @@
 
-.about {
+.about{
   display: flex;
   flex-direction: column;
+
   padding: 2rem;
 }
 
@@ -11,11 +12,7 @@
   margin: 0 0 1rem 0;
 }
 
-.aboutMe p {
-  font-size: 1.5rem;
-  line-height: 1.6;
-}
-
+ 
 .aboutMe {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -27,6 +24,7 @@
 
 /* Mobile-first styles */
 .background {
+  font-family: monospace;
   padding: 16px;
   display: flex;
   justify-content: center;
@@ -48,12 +46,6 @@
   align-items: center;
   gap: 12px;
   margin-bottom: 20px;
-}
-
-.logo {
-  width: 120px;
-  height: auto;
-  border-radius: 50%;
 }
 
 .about h1 {

@@ -1,45 +1,39 @@
 
 .nav {
-    /* padding: 1rem; */
     position: sticky;
     top: 0;
     background-color: rgb(156, 151, 138);
 
   }
 
+  
+
   .nav-container{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-right: 2rem;
   }
 
   .home-page{
-    padding-left: 3rem;
     font-family: 'Brush Script MT', cursive;
+    padding-left: 2rem;
    
   }
 
   button {
     background: none;
     border: none;
-    cursor: pointer;
-  }
-
   
 
-
+  }
   
   /* Reusable button style */
   .top {
-    background: transparent;
-    background-color: rgb(156, 151, 138);
     border: none;
     color: white; 
     border-radius: 6px;
     margin: 0 0.5rem;
-    cursor: pointer;
-    transition: background 0.3s ease;
+    
   }
   
   .top a {
@@ -51,12 +45,14 @@
   
   .top:hover {
     background-color: rgba(255, 255, 255, 0.2);
+    padding-right: 2rem;
   }
   
   /* --- Desktop Navigation --- */
   .desktop-nav {
     display: flex;
     justify-content: flex-end;
+    padding-right: 5rem;
 
   }
   
@@ -77,30 +73,27 @@
     float: right;
   }
 
-  
+
   
   /* Dropdown menu */
   .dropdown-menu {
-    /* display: flex;
-    flex-direction: column; */
-    background-color: none;
-    /* gap: 0.5rem; */
-    /* padding: 1rem; */
-    /* margin-top: 0.5rem; */
+   position: absolute;
+   right: 0;
+   width: 30%;
     border-top: 1px solid white; 
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-    /* z-index: 999; */
+    z-index: 10;
   }
-  
-  /* Make mobile buttons full width */
+
   .dropdown-menu .top {
     width: 50%;
     text-align: center;
   }
   
   /* --- Responsive Rules --- */
-  @media (max-width: 468px) {
+  @media (max-width: 768px) {
 
+  
     
     .desktop-nav {
       display: none;
@@ -120,14 +113,7 @@
   
   
 
-  @media (max-width: 370px) {
-    .home-page {
-      padding-left: 1rem;
-    }
 
-
-  }
-  
 
 
 

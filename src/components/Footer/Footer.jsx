@@ -13,9 +13,13 @@ export default function Footer() {
 
   return (
     <>
+
+    <div className= 'footer-container'>
       <div className="footer">
         <div>
-          <img src="src/assets/logo.jpg" alt="Logo" className="logo2" />
+          <Link to="/">
+         <button><img src="src/assets/logo.jpg" alt="Logo" className="logo2" /></button>
+         </Link>
           <p className="bottom">
             © 2025 Tiearra Westbrook. All rights reserved.
           </p>
@@ -52,7 +56,7 @@ export default function Footer() {
             Resume
           </a>
         </div>
-      </div>
+      </div></div>
     </>
   );
 }

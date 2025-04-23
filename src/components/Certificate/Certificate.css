@@ -1,32 +1,39 @@
 .certificate-container {
   background-color:rgb(156, 151, 138);
+ 
 
 }
 
-.certificate-header {
+.certificate-grid{
   text-align: center;
   font-size: 2em;
   color: #fff;
   padding: 20px;
+  
 }
 
-.certificate-header2 {
-  text-align: center;
-  font-size: 2em;
-  color: #fff;
-  padding: 10px;
-}
+
 
 
 @media (max-width: 600px) {
-  .certificate-header, .certificate-header2 {
-    font-size: 1.5em;
-    padding: 10px;
+
+  .certificate-title {
+    text-align: center;
+    margin-bottom: 1rem;
   }
-}
+  
+  
+  
+.certificate-grid img {
+    max-width: 250px;
+   
+  }
+  
+  
 .certificate-content {
   padding: 20px;
   background-color: #fff;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
 }

@@ -5,6 +5,9 @@ import emailjs from "@emailjs/browser";
 import { CiLinkedin } from "react-icons/ci";
 import { FaGithub } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
+import Footer from "../../components/Footer/Footer";
+
+
 // Ensure emailjs is initialized correctly
 const Contact = () => {
   const form = useRef();
@@ -37,7 +40,7 @@ const Contact = () => {
   return (
     <>
     {/* <Nav /> */}
-    
+    <div></div>
       <form onSubmit={sendEmail} ref={form}>
         <div className="title">
         <div className="contact">
@@ -116,7 +119,7 @@ const Contact = () => {
         </div>
       )}
 
-
+<Footer />
     </>
   );
 };

@@ -2,7 +2,6 @@ import "./About.css";
 import Nav from '../../components/Navbar/Nav';
 import Footer from "../../components/Footer/Footer";
 import Certificate from "../../components/Certificate/Certificate";
-import logo from "../../assets/logo.jpg";
 
 export default function About() {
   return (
@@ -14,8 +13,8 @@ export default function About() {
       <div className="about">
         <div className="aboutMe">
         <h1>About Me</h1>
-        <img src={logo} className='logo'/>
-        </div>
+        
+       </div>
         
           <p>
         
@@ -29,11 +28,11 @@ export default function About() {
             to bring ideas to life. Let's connect and explore how we can work
             together to make a positive impact through technology.
           </p>
-          
+           
         <Certificate/>
       </div>
     </div>
- 
+ <Footer/>
     </>
   );
 }

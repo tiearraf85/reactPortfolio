@@ -8,7 +8,6 @@ import JS from "../../assets/JS.png";
 import JSClasses from "../../assets/JSClasses.png";
 import MRF from "../../assets/MRF.png";
 import TipsBBW from "../../assets/TipsBBW.png";
-// import CertifactePer from "../../asstets/CertificatePer.jpg"
 import "./Certificate.css";
 
 export default function Certificate() {
@@ -16,29 +15,20 @@ export default function Certificate() {
 
     <>
     <div className="certificate-container">
-        {/* <object data="https://go.edovo.com/my_edovo" type="application/pdf" width="100%" height="100%">
-            <p>Your browser does not support PDFs. </p>
-             
-            
-           
-        </object> */}
+       
         <section className="certificate-section" id="certificates">
           <h1 className="certificate-title">Certificates</h1>
-        <div className="certificate-header">
-        {/* <img src={CertifactePer} /> */}
-        {/* <h2 className="certificate-header-text">I have also completed the following courses:</h2> */}
-        < img src={ARM}/>
-        < img src={CEHS}/>
-        < img src={ComputerBasics}/>
-        < img src={CSPP}/>
-        < img src={CCStrategy}/>
-        </div>
-        <div className="certificate-header2">
-        < img src={GGPFYBP}/>
-        < img src={JS}/>
-        < img src={JSClasses}/>
-        < img src={MRF}/>
-        < img src={TipsBBW}/>
+        <div className="certificate-grid">
+        < img src={ARM} alt='ARM Certifcate'/>
+        < img src={CEHS} alt='CHES Certificate'/>
+        < img src={ComputerBasics} alt='Computer Basics Certificate'/>
+        < img src={CSPP} alt='CSPP Certificate'/>
+        < img src={CCStrategy} alt="CCStrategy Certificate"/>
+        < img src={GGPFYBP} alt="GGPYBP Certificate"/>
+        < img src={JS} alt="JS Certificate"/>
+        < img src={JSClasses} alt="JSClasses Certificate"/>
+        < img src={MRF} alt="MRF Certificate"/>
+        < img src={TipsBBW} alt="TipsBBW Certificate"/>
            </div> 
  </section>  
     </div>

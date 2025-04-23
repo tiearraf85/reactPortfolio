@@ -25,8 +25,7 @@ export default function Nav() {
         <div className="nav-container">
           <Link to="/">
           <button >
-            <h1 className="home-page">Portflio</h1>
-          {/* <img src='src/assets/logo.jpg' alt="Logo" className="nav-logo"/> */}
+            <h1 className="home-page">Portfolio</h1>
           </button>
           </Link>
          <div className="nav-links desktop-nav">
@@ -41,8 +40,7 @@ export default function Nav() {
         <div className="mobile-nav">
           <button className="hamburger" onClick={toggleNav}>
           <RxHamburgerMenu />
-            {/* <img src="src/assets/menu.png" /> */}
-          </button>
+                </button>
 </div>
           {navOpen && (
             <div className="dropdown-menu">

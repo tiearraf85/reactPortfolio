@@ -48,6 +48,8 @@ export default function Home() {
     <>
       <Nav />
 
+      <div className='home-wrapper'>
+
       <section className="home-section">
         <div className="typewriter-container">
           <TypewriterSequence
@@ -72,7 +74,6 @@ export default function Home() {
               HTML, CSS, JavaScript, React, Node.js, Express.js, MongoDB, SQL,
               Git
             </p>
-            <div className="about-me"></div>
           </p>
           <img src="src/assets/logo.jpg" alt="Logo" className="logo" />
         </div>
@@ -148,21 +149,21 @@ export default function Home() {
           </div>
         </div>
       </section>
+      </div>
 
       <section className="contacts">
         <div className="contact">
           <p className="contact-description">
             Feel free to reach out if you have any questions or would like to
             collaborate!
-         <Contact   />
+       
           
        </p>
         </div>
+    
       </section> 
 
-
-
-    <Footer />
+  <Contact   />
     </>
   ); 
 }

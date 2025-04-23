@@ -13,16 +13,24 @@ export default function Projects() {
         <h1>Projects</h1>
         <p>My projects are up to date and user friendly.</p>
         <div className="images">
+          <a href="https://myinteractivepricing.netlify.app/"
+           target="_blank"
+           rel='noopener noreferrer'>
          <img src="src/assets/pricingApp.png" />
           <img src='src/assets/priceVS.png'/>
+          </a>
         </div>
         <div className="images">
+          <a href="https://tiearrascalculatorapp.netlify.app/"
+          target="_blank"
+          rel="noopener noreferrer">
             <img src='src/assets/calcVS.png'/>
             <img src="src/assets/CalculatorApp.png" />
+            </a>
         </div> 
       </div>
       </div>
-      
+      <Footer/>
     </>
   );
 }
