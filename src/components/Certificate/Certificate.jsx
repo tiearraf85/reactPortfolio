@@ -1,13 +1,13 @@
-import ARM from "../../assets/ARM.png";
-import CEHS from "../../assets/CEHS.png";
-import ComputerBasics from "../../assets/ComputerBasics.png";
-import CSPP from "../../assets/CSPP.png";
-import CCStrategy from "../../assets/CCStrategy.png";
-import GGPFYBP from "../../assets/GGPFYBP.png";
-import JS from "../../assets/JS.png";
-import JSClasses from "../../assets/JSClasses.png";
-import MRF from "../../assets/MRF.png";
-import TipsBBW from "../../assets/TipsBBW.png";
+import ARM from "../../../public/assets/ARM.png";
+import CEHS from "../../../public/assets/CEHS.png";
+import ComputerBasics from "../../../public/assets/ComputerBasics.png";
+import CSPP from "../../../public/assets/CSPP.png";
+import CCStrategy from "../../../public/assets/CCStrategy.png";
+import GGPFYBP from "../../../public/assets/GGPFYBP.png";
+import JS from "../../../public/assets/JS.png";
+import JSClasses from "../../../public/assets/JSClasses.png";
+import MRF from "../../../public/assets/MRF.png";
+import TipsBBW from "../../../public/assets/TipsBBW.png";
 import "./Certificate.css";
 
 export default function Certificate() {
