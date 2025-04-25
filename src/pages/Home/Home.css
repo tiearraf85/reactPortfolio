@@ -221,7 +221,7 @@ h2 {
   }
 } 
 
-@media (max-width: 370px) {
+@media (max-width: 350px) {
 
   
 
@@ -234,7 +234,6 @@ h2 {
   .typewriter-container {
     font-size: 1rem;
   }
-  
   .home-content, .description, .seDescription { 
     font-size: 16px;
   }
