@@ -129,7 +129,7 @@ export default function Home() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <img src="../../../public/assets/CalculatorApp.png" alt="Calculator App" />
+                <img src="../../assets/CalculatorApp.png" alt="Calculator App" />
               </a>
             </div>
             <div className="pricing-app">
@@ -140,7 +140,7 @@ export default function Home() {
                 rel="noopener noreferrer"
               >
                 <img
-                  src="../../../public/assets/PricingApp.png"
+                  src="../../assets/pricingApp.png" 
                   alt="Pricing App"
                   className="pricing-link"
                 />
