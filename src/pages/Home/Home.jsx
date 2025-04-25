@@ -75,7 +75,7 @@ export default function Home() {
               Git
             </p>
           </p>
-          <img src="../../../public/assets/logo.jpg" alt="Logo" className="logo" />
+          <img src="../../assets/logo.jpg" alt="Logo" className="logo" />
         </div>
       </section>
       <div className="technologies">
