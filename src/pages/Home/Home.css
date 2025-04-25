@@ -37,6 +37,7 @@ h2, .description, .projects-description {
 
 .technologies {
   background-color:  rgb(156, 151, 138);
+
 }
 
 .technologies, p, h1{
@@ -104,6 +105,8 @@ h2, .description, .projects-description {
 
 
   @media (max-width: 820px) {
+
+    
     
   .logo {
     height: fit-content                   
@@ -174,7 +177,7 @@ h2, .description, .projects-description {
 
   @media (max-width: 770px) {
     .expanding{
-      font-size: 2rem;
+      font-size: 1.8rem;
     }
 
 h2 {
@@ -216,11 +219,16 @@ h2 {
     align-items: center;
     gap: 2rem;
   }
-
 } 
 
 @media (max-width: 370px) {
 
+  
+
+  .expanding {
+    font-size: 1.2rem;
+    
+  }
 
 
   .typewriter-container {
