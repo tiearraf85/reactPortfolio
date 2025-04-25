@@ -75,7 +75,7 @@ export default function Home() {
               Git
             </p>
           </p>
-          <img src="src/assets/logo.jpg" alt="Logo" className="logo" />
+          <img src="../../../public/assets/logo.jpg" alt="Logo" className="logo" />
         </div>
       </section>
       <div className="technologies">
@@ -129,7 +129,7 @@ export default function Home() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <img src="/src/assets/CalculatorApp.png" alt="Calculator App" />
+                <img src="../../../public/assets/CalculatorApp.png" alt="Calculator App" />
               </a>
             </div>
             <div className="pricing-app">
@@ -140,7 +140,7 @@ export default function Home() {
                 rel="noopener noreferrer"
               >
                 <img
-                  src="/src/assets/PricingApp.png"
+                  src="../../../public/assets/PricingApp.png"
                   alt="Pricing App"
                   className="pricing-link"
                 />
