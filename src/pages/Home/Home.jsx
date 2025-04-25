@@ -79,7 +79,7 @@ export default function Home() {
         </div>
       </section>
       <div className="technologies">
-        <h1>Technologies I Work With</h1>
+        <h1 className='expanding'>Technologies I Work With</h1>
         <p>
           I work with core web technologies that power modern websites and
           applications. HTML structures content, CSS styles it, and JavaScript

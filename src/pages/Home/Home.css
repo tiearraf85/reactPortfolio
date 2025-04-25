@@ -164,12 +164,18 @@ h2, .description, .projects-description {
   .pricing-link {
     padding-bottom: 4rem;
     
-   
   } 
+
+  .pricing-app, .calculator-app {
+    font-weight: bold;
+  }
 
 
 
   @media (max-width: 770px) {
+    .expanding{
+      font-size: 2rem;
+    }
 
 h2 {
     font-size: 16px;
@@ -214,6 +220,8 @@ h2 {
 } 
 
 @media (max-width: 370px) {
+
+
 
   .typewriter-container {
     font-size: 1rem;
