@@ -19,7 +19,7 @@ export default function About() {
           <p>
         
              
-            I'm Tiearra Westbrook, a passionate Full Stack Developer with a love
+            I'm Tiearra Westbrook, a passionate Frontend Developer with a love
             for coding and creating innovative solutions. With a background in
             web development, I specialize in building dynamic and user-friendly
             applications that deliver exceptional user experiences. My expertise
