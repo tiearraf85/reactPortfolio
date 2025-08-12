@@ -6,7 +6,13 @@
 
   }
 
+   .blogo {
+  width: 17rem;
+  /* padding-left: 5rem; */
+  border-radius: 20%;
+  margin-left: 7rem;
   
+ }
 
   .nav-container{
     display: flex;
@@ -14,12 +20,7 @@
     align-items: center;
   }
 
-  .home-page{
-    font-family: 'Brush Script MT', cursive;
-    padding-left: 2rem;
-    color: black;
-   
-  }
+  
 
   button {
     background: none;
@@ -29,24 +30,27 @@
   }
   
   /* Reusable button style */
-  .top {
+  .link-button {
     border: none;
     color: white; 
     border-radius: 6px;
-    margin: 0 0.5rem;
+    padding: 0.5rem 1rem;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: background-color 0.3s, padding-right 0.3s;
     
   }
   
-  .top a {
+  .link-button a {
     text-decoration: none;
     color: inherit;
     display: block;
     width: 100%;
   }
   
-  .top:hover {
-    background-color: rgba(255, 255, 255, 0.2);
-    padding-right: 2rem;
+  .link-button:hover {
+    background-color: rgba(237, 197, 213, 0.641);
+    padding-right: 3rem;
   }
   
   /* --- Desktop Navigation --- */

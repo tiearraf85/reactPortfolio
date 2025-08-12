@@ -18,7 +18,7 @@ export default function Footer() {
       <div className="footer">
         <div>
           <Link to="/">
-         <button><img src="../../assets/logo.jpg" alt="Logo" className="logo2" /></button>
+         <button><img src="../../assets/logo.jpeg" alt="Logo" className="logo" /></button>
          </Link>
           <p className="bottom">
             © 2025 Tiearra Westbrook. All rights reserved.

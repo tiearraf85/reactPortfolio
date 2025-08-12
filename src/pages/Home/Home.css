@@ -6,7 +6,16 @@
 }
 
 
-
+.portfolio{
+    font-family: 'Brush Script MT', cursive;
+    padding-right: 15rem;
+    margin: 0;
+    color: black;
+    font-size: 8rem;
+    
+   
+  }
+  
 .home-wrapper div, .contacts{
   font-family: monospace;
   padding-left: 4rem;
@@ -108,7 +117,7 @@ h2, .description, .projects-description {
 
     
   .logo {
-    height: fit-content                   
+   height: fit-content;                
   }
   
   

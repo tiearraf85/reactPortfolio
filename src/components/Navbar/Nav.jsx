@@ -25,12 +25,12 @@ export default function Nav() {
         <div className="nav-container">
           <Link to="/">
           <button >
-            <h1 className="home-page">Portfolio</h1>
+             <img src="../../assets/logo.jpeg" alt="Logo" className="blogo" />
           </button>
           </Link>
          <div className="nav-links desktop-nav">
          {portItems.map((item, index) => (
-            <button key={index} className="top">  
+            <button key={index} className="link-button">  
               <Link to={item.path}>{item.name}</Link>
             </button>
           ))}
