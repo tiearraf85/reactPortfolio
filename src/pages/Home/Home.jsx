@@ -54,8 +54,10 @@ export default function Home() {
             <TypewriterSequence
               texts={[
                 "Tiearra Westbrook",
-                "Currently Learning JavaScript & Next.js...",
-                "Passionate About Web Development...",
+                "Currently Learning MongoDB & Next.js...",
+                "Passionate About Data Management...",
+                "Exploring AI solutions...",
+                "Building Engaging Web Applications..",
                 "Exploring New Technologies...",
                 "Crafting Elegant Solutions...",
                 "Code, Learn, Repeat...",
@@ -65,7 +67,9 @@ export default function Home() {
 
           <div className="home-content">
             <p className="description">
-              In The Process of Learning JavaScript And Next.js, I'm Passionate
+              I'm Also Skilled In Creating Strong Branding And Designing
+              Brochures and Flyers That Are Visually Appealing And Effective. In
+              The Process of Learning Python and AI solutions, I'm Passionate
               About Crafting Elegant and Efficient Web Solutions. My Focus Is On
               Deliverng High-Quality, Innovative Projects While Continuously
               Expanding My Expertise In The Tech Industry.
@@ -99,12 +103,11 @@ export default function Home() {
               As I continue my journey in web development, I'm diving into new
               technologies and frameworks to enhance my skill set. From
               exploring the capabilities of Next.js to mastering the intricacies
-              of JavaScript, I'm committed to continuous learning and growth in
-              the tech industry. I'm Currently Improving My Proficiency in
-              Next.Js, Git and MongoDb. Next.js Simplifies Server-Side
-              Rendering, And Git Streamlines Version Control-Key Tools For
-              Modern Web Development and MongoDb is a NoSQL Database That
-              Enhances Data Management.
+              of Python, I'm committed to continuous learning and growth in the
+              tech industry. I'm Currently Improving My Proficiency in Next.Js,
+              Git and MongoDb. Next.js Simplifies Server-Side Rendering, And Git
+              Streamlines Version Control-Key Tools For Modern Web Development
+              and MongoDb is a NoSQL Database That Enhances Data Management.
             </p>
 
             <div className="expanding-icons">
@@ -162,8 +165,9 @@ export default function Home() {
           </p>
         </div>
       </section>
+      <Footer />
 
-      <Contact />
+      {/* <Contact /> */}
     </>
   );
 }

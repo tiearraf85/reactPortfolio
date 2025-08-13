@@ -18,7 +18,9 @@ export default function Footer() {
       <div className="footer">
         <div>
           <Link to="/">
-         <button><img src="../../assets/logo.jpeg" alt="Logo" className="logo" /></button>
+         <button>
+          <img src="../../assets/logo.jpeg" alt="Logo" className="logo" />
+          </button>
          </Link>
           <p className="bottom">
             © 2025 Tiearra Westbrook. All rights reserved.
@@ -56,7 +58,8 @@ export default function Footer() {
             Resume
           </a>
         </div>
-      </div></div>
+      </div>
+      </div>
     </>
   );
 }

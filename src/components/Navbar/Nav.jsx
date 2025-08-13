@@ -7,9 +7,12 @@ export default function Nav() {
   const [navOpen, setNavOpen] = useState(false);
 
   const toggleNav = () => {
-    setNavOpen(!navOpen);
+    setNavOpen(true);
   };
 
+  // const closeNav = () => {
+  //   setNavOpen(false);
+  // }
 
   
  
@@ -24,7 +27,7 @@ export default function Nav() {
       <nav className="nav">
         <div className="nav-container">
           <Link to="/">
-          <button >
+          <button className="link-blogo">
              <img src="../../assets/logo.jpeg" alt="Logo" className="blogo" />
           </button>
           </Link>
@@ -36,13 +39,15 @@ export default function Nav() {
           ))}
         </div>
         
-
+{(!navOpen && 
         <div className="mobile-nav">
-          <button className="hamburger" onClick={toggleNav}>
+          <button className="hamburger" 
+          onClick={toggleNav}>
           <RxHamburgerMenu />
                 </button>
 </div>
-          {navOpen && (
+       )}   
+       {navOpen && (
             <div className="dropdown-menu">
               {portItems.map((item, index) => (
                 <button
