@@ -1,27 +1,39 @@
 
   
 .background {
-    padding: 2rem;
+    /* padding: 2rem; */
 }
 
-.projects {
-    text-align: center;
-    /* font-size: 2rem;
-    margin-bottom: 1rem; */
-}
 
 .images  img{
-    max-width: 100%;
-    height: auto;
+    width: 50%;
+    /* height: auto; */
     display: flex;
-    justify-content: space-evenly;
-    padding: 2rem;
+    justify-content: center ;
+    /* padding: 2rem; */
+    margin-left: 30rem;
+    margin: 0 auto;
+
+
+}
+
+.color {
+    background-color: rgb(156, 151, 138);
+    color: white;
+    padding: 1rem;
+    margin: 0;
+
+}
+
+.latest {
+    padding: .5rem;
 
 }
 
 
 .projects p {
     font-size: 1.5rem;
+    margin: 3;
 }
 
 @media (max-width: 768px) {

@@ -8,29 +8,28 @@ export default function Projects() {
     <>
       <Nav />
 
-<div className='background'>
-      <div className="projects">
-        <h1>Projects</h1>
-        <p>My projects are up to date and user friendly.</p>
-        <div className="images">
-          <a href="https://myinteractivepricing.netlify.app/"
-           target="_blank"
-           rel='noopener noreferrer'>
-         <img src="../../assets/pricingApp.png" />
-          <img src='../../assets/priceVS.png'/>
-          </a>
+      <div className="background">
+        <div className="projects">
+          <h1>Latest Projects</h1>
+          <p>
+            “Here are my latest projects and mockups. In addition to leveraging
+            AI-generated images, I handled the full branding for each company,
+            ensuring a cohesive visual identity throughout the designs.”
+          </p>
+          <div className="images">
+            <h1 className='color'>“UI/UX Project mockup and branding design”</h1>
+            <img className="latest" src="../../assets/SkillzUp.png" />
+            <div>
+              <h1 className="color">“Branded marketing flyer design”</h1>
+              <img className="latest" src="/public/assets/EmpowerFlyers.png" />
+              <h1 className='color'>“Informational brochure with branding”</h1>
+              <img className='latest' src="/assets/1.png" />
+              <img src="/assets/2.png" />
+            </div>
+          </div>
         </div>
-        <div className="images">
-          <a href="https://tiearrascalculatorapp.netlify.app/"
-          target="_blank"
-          rel="noopener noreferrer">
-            <img src='../../assets/calcVS.png'/>
-            <img src="../../assets/CalculatorApp.png" />
-            </a>
-        </div> 
       </div>
-      </div>
-      <Footer/>
+      <Footer />
     </>
   );
 }

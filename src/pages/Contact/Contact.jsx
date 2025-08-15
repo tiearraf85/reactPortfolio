@@ -39,15 +39,13 @@ const Contact = () => {
   };
   return (
     <>
-    {/* <Nav /> */}
+    <Nav />
     <div></div>
       <form onSubmit={sendEmail} ref={form}>
         <div className="title">
         <div className="contact">
           <h1>Contact Me</h1>
 
-          <p>P.O. Box 13948</p>
-          <p>Clermont, FL. 34987</p>
         </div>
 
         <br />       
@@ -96,7 +94,7 @@ const Contact = () => {
         </div>
        
         </div>
-      </form>
+      
 
 <div className="social-buttons">
   <a href="https://www.linkedin.com/in/tiearra-westbrook-762024351/" target="_blank" rel="noopener nonreferrer">
@@ -108,7 +106,7 @@ const Contact = () => {
  <button className='social-btn'><FaFacebook />Facebook</button> 
 </div>
       
-
+</form>
       {showModal && (
         <div className="modal-overlay">
           <div className="modal-content">

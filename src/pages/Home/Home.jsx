@@ -78,13 +78,13 @@ export default function Home() {
                 Git
               </p>
             </p>
-            <h1 className="portfolio">Portfolio</h1>
+            <img src="../../assets/logo.jpeg" alt="Logo" className="blogo" />
           </div>
         </section>
         <section>
           <div className="technologies">
             <h1 className="expanding">Technologies I Work With</h1>
-            <p>
+            <p className="expanding-description">
               I work with core web technologies that power modern websites and
               applications. HTML structures content, CSS styles it, and
               JavaScript adds interactivity. Together, they form the foundation
@@ -99,7 +99,7 @@ export default function Home() {
             </div>
 
             <h1 className="expanding">Expanding My Skills</h1>
-            <p className="expanigng-description">
+            <p className="expanding-description">
               As I continue my journey in web development, I'm diving into new
               technologies and frameworks to enhance my skill set. From
               exploring the capabilities of Next.js to mastering the intricacies
@@ -159,7 +159,7 @@ export default function Home() {
 
       <section className="contacts">
         <div className="contact">
-          <p className="contact-description">
+          <p className="expanding-description"> 
             Feel free to reach out if you have any questions or would like to
             collaborate!
           </p>

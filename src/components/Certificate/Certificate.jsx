@@ -9,7 +9,6 @@ import JSClasses from "../../../public/assets/JSClasses.png";
 import MRF from "../../../public/assets/MRF.png";
 import TipsBBW from "../../../public/assets/TipsBBW.png";
 import "./Certificate.css";
-
 export default function Certificate() {
   return (
 
@@ -30,6 +29,7 @@ export default function Certificate() {
         < img src={MRF} alt="MRF Certificate"/>
         < img src={TipsBBW} alt="TipsBBW Certificate"/>
            </div> 
+          
  </section>  
     </div>
   </>

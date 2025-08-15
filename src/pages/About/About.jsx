@@ -3,6 +3,7 @@ import Nav from '../../components/Navbar/Nav';
 import Footer from "../../components/Footer/Footer";
 import Certificate from "../../components/Certificate/Certificate";
 
+
 export default function About() {
   return (
     <>
@@ -16,7 +17,7 @@ export default function About() {
         
        </div>
         
-          <p>
+          <p className="aboutText">
         
              
             I'm Tiearra Westbrook, a passionate Frontend Developer with a love
@@ -28,9 +29,9 @@ export default function About() {
             to bring ideas to life. Let's connect and explore how we can work
             together to make a positive impact through technology.
           </p>
-           
+         
         <Certificate/>
-      </div>
+       </div> 
     </div>
  <Footer/>
     </>
