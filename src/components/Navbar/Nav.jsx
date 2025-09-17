@@ -21,7 +21,7 @@ export default function Nav() {
 
   return (
     <>
-      <nav className="nav">
+      <Nav className="nav">
         <div className="nav-container">
           <Link to="/">
           <button className="link-portfolio">
@@ -58,7 +58,7 @@ export default function Nav() {
             </div>
           )}
         </div>
-      </nav>
+      </Nav>
     </>
   );
 }
