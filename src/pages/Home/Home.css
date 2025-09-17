@@ -1,3 +1,10 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  
+
+}
 .typewriter-container {
   padding-top: 2rem;
   padding-left: 3rem;
@@ -5,19 +12,26 @@
   color: brown
 }
 
+.home-wrapper{
+  padding-left: 3rem;
+  padding-right: 5rem;
+}
+
 
 .blogo {
   height: 30rem;
   width: 30rem;
-  margin-right: 10rem;
+  margin-right: 2rem;
+  max-width: 100%;
+  /* object-fit: cover; */
 }
   
-.home-wrapper div, .contacts{
+/* .home-wrapper .projects div, .contacts{
   font-family: monospace;
   padding-left: 4rem;
-  padding-right: 4rem;
-  margin: 3rem;
-}
+  padding-right: 2rem;
+   margin: 3rem;
+  } */
 
 .home-content {
   display: flex; 
@@ -53,6 +67,12 @@ h2, .description, .projects-description {
 .technologies, p, h1{
   text-align: center;
 
+}
+
+.expanding{
+  padding-top: 2rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 
 .tech-icons {
@@ -108,17 +128,151 @@ h2, .description, .projects-description {
   background-color:  rgb(156, 151, 138);
 }
 
+.projects img {
+  
+    max-width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  }
+
+  .swiper {
+    /* background-color:rgb(156, 151, 138); */
+    width: 100%;
+    height: 50%;
+    max-width: 600px;
+    margin: auto;
+  }
 
 
 
 
 
 
-  @media (max-width: 820px) {
+
+@media (max-width: 1024px) {
+  .home-content {
+    flex-direction: column;
+    align-items: center;
+    padding-left: 0;
+    margin: 0;
+  }
+
+  .swiper-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+  /* Center everything inside the projects section */
+/* .projects {
+  text-align: center;
+  padding: 2rem;
+} */
+
+/* Target every slide container */
+.swiper-slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Normalize all images inside Swiper */
+.swiper-slide img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.55);
+  transition: transform 0.6s ease, filter 0.3s ease;
+  filter: brightness(0.95) contrast(1.05); /* default filter */
+}
+
+/* Add a hover effect to make them "pop" */
+.swiper-slide img:hover {
+  transform: scale(1.05);
+  filter: brightness(1.05) contrast(1.1);
+}
+
+/* Keep captions consistent */
+.swiper-slide p {
+  margin-top: 1rem;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color : #333;
+}
+
+/* Swiper container itself */
+.swiper {
+  width: 100%;
+  max-width: 900px; /* keeps slides from being too big */
+  margin: auto;
+}
+
+
+
+
+  /* .latest
+
+  
+  .projects img {
+  
+    max-width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 30px 20px rgba(1, 0, 0, 0.2);
+  }
+
+  .swiper {
+    background-color:rgb(156, 151, 138);
+    width: 100%;
+    max-width: 800px;
+    margin: 100%;
+  } */
+
+  
+  /* .projects-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 1.5rem;  
+    gap: 4rem;
+  } */
+}
+  
+
+@media (max-width: 920px) {
+  .expanding {
+    font-size: 1.5rem;
+  }
+
+  .expanding-description {
+    font-size: 1.2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+
+@media (max-width: 820px) {
 
     
   .blogo {
    height: fit-content;                
+  }
+
+  .home-content {
+    flex-direction: column;
+    align-items: center;
+    padding-left: 0;
+    margin: 0;
+  }
+
+  .expanding-description{
+    font-size: 1.2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
   
   
@@ -132,7 +286,7 @@ h2, .description, .projects-description {
       font-size: 1.5rem;
     }
 
-    .home-wrapper div {
+    .home-wrapper div, nav{
       padding-left: 0;
       padding-right: 0;
     }
@@ -160,11 +314,19 @@ h2, .description, .projects-description {
   
   }
 
+  .description {
+    text-align: center;  
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1rem; 
+    font-size: small;
+  }
+
 }
 
 
-
-  .project-links {
+  /* .project-links {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -176,7 +338,7 @@ h2, .description, .projects-description {
   .pricing-link {
     padding-bottom: 4rem;
     
-  } 
+  }  */
 
   .pricing-app, .calculator-app {
     font-weight: bold;
@@ -190,6 +352,12 @@ h2, .description, .projects-description {
 
     .expanding {
       font-size: 2rem;
+    }
+
+    .expanding-description {
+      font-size: 1rem;
+      padding-left: 1rem;
+      padding-right: 1rem;
     }
 
 
@@ -241,6 +409,12 @@ h2 {
   .expanding {
     font-size: 1.5rem;
     
+  }
+
+  .expanding-description {
+    font-size: 1rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
   }
 
 

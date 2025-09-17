@@ -10,9 +10,6 @@ export default function Nav() {
     setNavOpen(true);
   };
 
-  // const closeNav = () => {
-  //   setNavOpen(false);
-  // }
 
   
  
@@ -29,7 +26,6 @@ export default function Nav() {
           <Link to="/">
           <button className="link-portfolio">
              <h1 className="portfolio">Portfolio</h1>
-             {/* <img src="../../assets/logo.jpeg" alt="Logo" className="blogo" /> */}
           </button>
           </Link>
          <div className="nav-links desktop-nav">

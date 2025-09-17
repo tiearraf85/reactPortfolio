@@ -8,7 +8,10 @@ import { SiJavascript } from "react-icons/si";
 import { FaGitAlt } from "react-icons/fa6";
 import { TbBrandNextjs } from "react-icons/tb";
 import { SiMongodb } from "react-icons/si";
-import Contact from "../../pages/Contact/Contact";
+import {Swiper, SwiperSlide} from 'swiper/react';
+import 'swiper/css';  
+import 'swiper/css/pagination';
+import { Pagination } from "swiper/modules";
 
 const TypewriterSequence = ({ texts, typingSpeed = 100, pauseTime = 1500 }) => {
   const [displayedText, setDisplayedText] = useState("");
@@ -67,12 +70,12 @@ export default function Home() {
 
           <div className="home-content">
             <p className="description">
-              I'm Also Skilled In Creating Strong Branding And Designing
-              Brochures and Flyers That Are Visually Appealing And Effective. In
-              The Process of Learning Python and AI solutions, I'm Passionate
-              About Crafting Elegant and Efficient Web Solutions. My Focus Is On
-              Deliverng High-Quality, Innovative Projects While Continuously
-              Expanding My Expertise In The Tech Industry.
+              Skilled In Creating Strong Branding And Designing Brochures and
+              Flyers That Are Visually Appealing And Effective. In The Process
+              of Learning Python and AI solutions, I'm Passionate About Crafting
+              Elegant and Efficient Web Solutions. My Focus Is On Deliverng
+              High-Quality, Innovative Projects While Continuously Expanding My
+              Expertise In The Tech Industry.
               <p className="seDescription">
                 HTML, CSS, JavaScript, React, Node.js, Express.js, MongoDB, SQL,
                 Git
@@ -124,8 +127,17 @@ export default function Home() {
               Check out some of my projects that showcase my skills and
               creativity.
             </p>
-            <div className="project-links">
-              <div className="calculator-app">
+<div className="swiper-container">
+            <Swiper
+            modules={[Pagination]}
+            pagination={{clickable:true}}
+            spaceBetween={30}
+            slidesPerView={1}
+            >
+
+              <SwiperSlide>
+            {/* <div className="project-links"> */}
+              {/* <div className="calculator-app"> */}
                 <p>Click Me</p>
                 <a
                   href="https://tiearrascalculatorapp.netlify.app/"
@@ -137,8 +149,11 @@ export default function Home() {
                     alt="Calculator App"
                   />
                 </a>
-              </div>
-              <div className="pricing-app">
+              {/* </div> */}
+              </SwiperSlide>
+
+              <SwiperSlide>
+              {/* <div className="pricing-app"> */}
                 <p>Click me</p>
                 <a
                   href="https://myinteractivepricing.netlify.app/"
@@ -151,23 +166,44 @@ export default function Home() {
                     className="pricing-link"
                   />
                 </a>
+              {/* </div> */}
+</SwiperSlide>
+              <SwiperSlide>
+              <div className="images1">
+                <p>“UI/UX Website mockup and branding design”</p>
+                <img className="latest" src="../../assets/SkillzUp.png" />
               </div>
-            </div>
+              </SwiperSlide>
+              <SwiperSlide>
+             <div className="images2">
+              <p>“Branded marketing flyer design”</p>
+              <img className="latest" src="/public/assets/EmpowerFlyers.png" />
+             </div>
+         </SwiperSlide>            
+         
+          <SwiperSlide>
+             <div className="images3"> <p>“Informational brochure with branding”</p>
+              <img className="latest" src="/assets/1.png" />
+              <img src="/assets/2.png" />
+              </div>
+              </SwiperSlide>
+            {/* </div> */}
+            </Swiper>
           </div>
+</div>
+          
         </section>
       </div>
 
       <section className="contacts">
         <div className="contact">
-          <p className="expanding-description"> 
+          <p className="expanding-description">
             Feel free to reach out if you have any questions or would like to
             collaborate!
           </p>
         </div>
       </section>
       <Footer />
-
-      {/* <Contact /> */}
     </>
   );
 }
