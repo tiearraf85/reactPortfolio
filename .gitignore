@@ -5,29 +5,29 @@
 # ===== LOG FILES =====
 # These are files that record what happened while your app was running
 # We don't save these because they're temporary and change constantly
-logs                    # General log folder
-*.log                   # Any file ending in .log (like error.log, debug.log)
-npm-debug.log*          # NPM package manager error logs
-yarn-debug.log*         # Yarn package manager error logs
-yarn-error.log*         # Yarn package manager error files
-pnpm-debug.log*         # PNPM package manager error logs
-lerna-debug.log*        # Lerna monorepo tool error logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
 
 # ===== DEPENDENCIES AND BUILD FILES =====
 # These folders/files are created automatically - no need to save them
-node_modules            # Folder with all your downloaded packages (HUGE folder - don't save!)
-dist                    # Built/compiled version of your website (created by npm run build)
-dist-ssr               # Server-side rendered build files (advanced build output)
-*.local                 # Local configuration files (personal settings)
+node_modules
+dist
+dist-ssr
+*.local
 
 # ===== EDITOR DIRECTORIES AND FILES =====
 # These are files created by code editors - personal preferences, not part of the project
-.vscode/*               # VS Code editor settings folder
-!.vscode/extensions.json # EXCEPTION: Do save the recommended extensions list
-.idea                   # IntelliJ/WebStorm editor settings
-.DS_Store               # Mac system file (creates automatically on Mac computers)
-*.suo                   # Visual Studio solution user options
-*.ntvs*                 # Node.js Tools for Visual Studio files
-*.njsproj               # Node.js project files
-*.sln                   # Visual Studio solution files
-*.sw?                   # Vim editor swap files (temporary files while editing)
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
