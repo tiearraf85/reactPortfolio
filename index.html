@@ -1,23 +1,71 @@
+<!-- INDEX.HTML - This is the foundation of your entire website -->
+<!-- Think of this like the "frame" of a house - everything else gets built inside it -->
+
 <!DOCTYPE html>
+<!-- HTML5 DECLARATION - Tells the browser "this is modern HTML" -->
+
 <html lang="en">
+<!-- HTML TAG - The container for everything on your webpage -->
+<!-- lang="en" tells screen readers and browsers this page is in English -->
+
   <head>
+    <!-- HEAD SECTION - Information ABOUT your website (invisible to visitors) -->
+    <!-- This is like the "business card" that browsers and search engines read -->
+
+    <!-- CHARACTER ENCODING - Tells browser how to read text (supports all languages/symbols) -->
     <meta charset="UTF-8" >
+
+    <!-- VITE FAVICON - Small icon that shows in browser tabs (from Vite build tool) -->
     <link rel="icon" type="image/svg+xml" href="/vite.svg" >
+
+    <!-- VIEWPORT - Makes your website look good on phones, tablets, and computers -->
+    <!-- This ensures your website scales properly on different screen sizes -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+
+    <!-- PAGE TITLE - What shows in the browser tab when people visit -->
     <title>Tiearra Westbrook's Portfolio Website</title>
+
+    <!-- CUSTOM FAVICON - Your personal logo that shows in browser tabs -->
     <link rel="icon" type="image/png" href="/assets/logo.jpeg">
+
+    <!-- SOCIAL MEDIA META TAGS - Make your website look good when shared on social media -->
+    <!-- These create the preview box when someone shares your link -->
+
+    <!-- OPEN GRAPH TITLE - Title that shows when shared on Facebook, LinkedIn, etc. -->
     <meta property="og:title" content="Tiearra Westbrook's Portfolio Website">
-    <meta property="og:description" content="Welcome to Tiearra Westbrook's 
+
+    <!-- OPEN GRAPH DESCRIPTION - Description that shows under the title when shared -->
+    <meta property="og:description" content="Welcome to Tiearra Westbrook's
     portfolio website, showcasing her skills, projects, and professional journey
      in the tech industry.">
+
+    <!-- OPEN GRAPH IMAGE - Picture that shows when your link is shared -->
      <meta property="og:image" content="//tiearrawestbrook.vercel.app/assets/logo.jpeg">
+
+     <!-- OPEN GRAPH TYPE - Tells social media platforms this is a website -->
      <meta property=" og:type" content="website">
+
+     <!-- OPEN GRAPH URL - The web address of your site -->
      <meta property="og:url" content="https://tiearrawestbrook.vercel.app/">
+
+    <!-- TWITTER CARD - Makes your website look good when shared on Twitter/X -->
+    <!-- "summary_large_image" means it shows a big picture preview -->
     <meta name="twitter:card" content="summary_large_image">
+
 </head>
+
   <body>
+    <!-- BODY SECTION - The visible part of your website -->
+
+    <!-- ROOT DIV - This is where your entire React application gets "planted" -->
+    <!-- React takes this empty div and fills it with all your components -->
+    <!-- Think of this like an empty picture frame that React fills with your portfolio -->
     <div id="root"></div>
 
+    <!-- MAIN SCRIPT - This starts your React application -->
+    <!-- type="module" means it's modern JavaScript that can import other files -->
+    <!-- This points to main.jsx, which boots up your entire website -->
     <script type="module" src="/src/main.jsx"></script>
+
   </body>
 </html>
