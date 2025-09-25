@@ -174,31 +174,15 @@ export default function Home() {
             </div>
 
             {/* RIGHT SIDE - Your profile photo */}
-            <div className="
-              flex justify-center lg:justify-end  // Centered on phones, right-aligned on computers
-            ">
+            <div className="flex justify-center lg:justify-end">
               <div className="relative">  {/* relative allows positioning of children */}
                 {/* Background blur effect behind photo */}
-                <div className="
-                  absolute    // Positioned behind the photo
-                  inset-0     // Covers the same area as photo
-                  bg-gradient-to-r from-primary-500 to-secondary-500  // Purple gradient
-                  rounded-full  // Perfect circle
-                  blur-3xl      // Very blurry
-                  opacity-20    // Mostly transparent (just a hint of color)
-                "></div>
+                <div className="absolute inset-0 bg-gradient-to-r from-primary-500 to-secondary-500 rounded-full blur-3xl opacity-20"></div>
                 {/* Your actual profile photo */}
                 <img
                   src="/assets/logo.jpeg"
                   alt="Tiearra Westbrook"  // Description for screen readers
-                  className="
-                    relative    // Positioned in front of blur
-                    w-80 h-80   // Width and height (80 units each)
-                    object-cover // Image fills space nicely without distortion
-                    rounded-full // Perfect circle shape
-                    border-4 border-white  // Thick white border
-                    shadow-2xl   // Large shadow for depth
-                  "
+                  className="relative w-80 h-80 object-cover rounded-full border-4 border-white shadow-2xl"
                 />
               </div>
             </div>

@@ -1,17 +1,18 @@
 // FOOTER COMPONENT - The bottom section of every page
-// Contains your contact info, links, services, and copyright
+// Contains social links, navigation, and copyright information
+// Think of this like the "contact info" section at the bottom of every page
 
-import { Link } from "react-router-dom";  // For links between pages
-import { EnvelopeIcon, PhoneIcon } from "@heroicons/react/24/outline"; // Icons for email/phone
-import { ArrowDownTrayIcon } from "@heroicons/react/24/solid"; // Download icon for resume
+import { Link } from "react-router-dom";  // For clickable links that go to other pages
 
 // MAIN FOOTER COMPONENT
 export default function Footer() {
-  // NAVIGATION LINKS - List of pages to show in footer
-  const routeItems = [
-    { name: "About", path: "/about" },     // About page
-    { name: "Projects", path: "/projects" }, // Projects page
-    { name: "Contact", path: "/contact" },  // Contact page
+  // SOCIAL LINKS DATA - Your social media profiles
+  // Each link has an icon, URL, and label for screen readers
+  const socialLinks = [
+    { name: 'LinkedIn', href: '#', icon: '📫' },
+    { name: 'GitHub', href: '#', icon: '💼' },
+    { name: 'Twitter', href: '#', icon: '🐦' },
+    { name: 'Email', href: 'mailto:contact@example.com', icon: '✉️' }
   ];
 
   // GET CURRENT YEAR - Automatically updates copyright year
@@ -19,176 +20,118 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    {/* Main footer container */}
-    <footer className="
-      bg-gray-900  // Very dark gray background
-      text-white   // White text
-    ">
-      <div className="container">  {/* Centers content */}
-        <div className="
-          py-16 px-4  // Padding top/bottom and left/right
-        ">
-          {/* FOOTER GRID - 4 columns on large screens, 2 on medium */}
-          <div className="
-            grid              // Grid layout
-            lg:grid-cols-4    // 4 columns on large screens
-            md:grid-cols-2    // 2 columns on medium screens
-            gap-8             // Space between columns
-          ">
+    // Main footer container - dark background with white text
+    <footer className="bg-gray-900 text-white">
+      <div className="container">
+        {/* Footer content with padding */}
+        <div className="py-16 px-4">
+          {/* FOOTER GRID - 4 columns on large screens, 2 on tablets, 1 on phones */}
+          <div className="grid lg:grid-cols-4 md:grid-cols-2 gap-8 mb-8">
+
             {/* ===== COLUMN 1: BRAND SECTION ===== */}
-            <div className="lg:col-span-1">  {/* Takes 1 column width */}
+            <div className="lg:col-span-1">
               {/* Logo and brand name (clickable, goes to home) */}
               <Link to="/" className="inline-block mb-4">
-                <div className="
-                  flex items-center  // Side by side
-                  space-x-2          // Space between image and text
-                ">
-                  {/* Your profile picture */}
+                <div className="flex items-center space-x-2">
+                  {/* Your profile picture - small circle */}
                   <img
                     src="/assets/logo.jpeg"
                     alt="Tiearra Westbrook"
-                    className="
-                      w-12 h-12     // Small square
-                      rounded-full  // Circle shape
-                      object-cover  // Image fills nicely
-                      border-2 border-primary-400  // Purple border
-                    "
+                    className="w-12 h-12 rounded-full object-cover border-2 border-primary-400"
                   />
-                  {/* "Portfolio" text with gradient */}
-                  <span className="
-                    text-2xl font-bold  // Large, bold text
-                    bg-gradient-to-r from-primary-400 to-secondary-400  // Purple gradient
-                    bg-clip-text text-transparent  // Gradient shows through text
-                  ">
+                  {/* Your name with gradient colors */}
+                  <span className="text-xl font-bold bg-gradient-to-r from-primary-400 to-secondary-400 bg-clip-text text-transparent">
                     Portfolio
                   </span>
                 </div>
               </Link>
-              <p className="text-gray-300 leading-relaxed mb-6">
-                Web developer exploring JavaScript and Next.js, dedicated to
-                building engaging applications and embracing new challenges.
+              {/* Short description about you */}
+              <p className="text-gray-400 text-sm leading-relaxed mb-4">
+                Creating beautiful and functional web experiences with modern technologies.
+                Always learning, always growing.
               </p>
-              <div className="space-y-3">
-                <div className="flex items-center space-x-3">
-                  <EnvelopeIcon className="h-5 w-5 text-primary-400" />
+              {/* SOCIAL MEDIA LINKS */}
+              <div className="flex space-x-4">
+                {socialLinks.map((social) => (
                   <a
-                    href="mailto:gracemilestoneinc@gmail.com"
-                    className="text-gray-300 hover:text-primary-400 transition-colors duration-200"
+                    key={social.name}
+                    href={social.href}
+                    className="text-gray-400 hover:text-primary-400 transition-colors duration-200 text-xl"
+                    aria-label={social.name}
                   >
-                    gracemilestoneinc@gmail.com
+                    {social.icon}
                   </a>
-                </div>
-                <div className="flex items-center space-x-3">
-                  <PhoneIcon className="h-5 w-5 text-primary-400" />
-                  <a
-                    href="tel:954-806-6996"
-                    className="text-gray-300 hover:text-primary-400 transition-colors duration-200"
-                  >
-                    (954) 806-6996
-                  </a>
-                </div>
+                ))}
               </div>
             </div>
 
             {/* ===== COLUMN 2: QUICK LINKS ===== */}
-            <div className="lg:col-span-1">
-              <h3 className="text-lg font-semibold mb-6">Quick Links</h3>
-              <nav className="space-y-4">  {/* Navigation section with space between items */}
-                {/* Loop through each page link */}
-                {routeItems.map((item) => (
-                  <Link
-                    key={item.path}  // Unique ID for React
-                    to={item.path}   // Where it goes when clicked
-                    className="
-                      block         // Each link on its own line
-                      text-gray-300 // Light gray color
-                      hover:text-primary-400  // Purple on hover
-                      transition-colors duration-200  // Smooth color change
-                    "
-                  >
-                    {item.name}  {/* Show page name */}
+            <div>
+              <h4 className="font-semibold text-white mb-4">Quick Links</h4>
+              <ul className="space-y-2">
+                <li>
+                  <Link to="/" className="text-gray-400 hover:text-white transition-colors duration-200">
+                    Home
                   </Link>
-                ))}
-                {/* Resume download link */}
-                <a
-                  href="/assets/Resume.pdf"        // File location
-                  download="TiearraWestbrook_Resume.pdf"  // Downloaded filename
-                  className="
-                    inline-flex items-center  // Icon and text side by side
-                    space-x-2                // Space between icon and text
-                    text-primary-400         // Purple color
-                    hover:text-primary-300   // Lighter purple on hover
-                    transition-colors duration-200
-                  "
+                </li>
+                <li>
+                  <Link to="/about" className="text-gray-400 hover:text-white transition-colors duration-200">
+                    About
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/projects" className="text-gray-400 hover:text-white transition-colors duration-200">
+                    Projects
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/contact" className="text-gray-400 hover:text-white transition-colors duration-200">
+                    Contact
+                  </Link>
+                </li>
+              </ul>
+            </div>
+
+            {/* ===== COLUMN 3: TECHNOLOGIES ===== */}
+            <div>
+              <h4 className="font-semibold text-white mb-4">Technologies</h4>
+              <ul className="space-y-2 text-gray-400 text-sm">
+                <li>React</li>
+                <li>JavaScript</li>
+                <li>HTML & CSS</li>
+                <li>Tailwind CSS</li>
+                <li>Node.js</li>
+                <li>Git & GitHub</li>
+              </ul>
+            </div>
+
+            {/* ===== COLUMN 4: CONTACT INFO ===== */}
+            <div>
+              <h4 className="font-semibold text-white mb-4">Get In Touch</h4>
+              <div className="space-y-2 text-gray-400 text-sm">
+                <p>Ready to work together?</p>
+                <p>Let's create something amazing!</p>
+                <Link
+                  to="/contact"
+                  className="inline-block mt-2 text-primary-400 hover:text-primary-300 transition-colors duration-200"
                 >
-                  <ArrowDownTrayIcon className="h-4 w-4" />  {/* Download icon */}
-                  <span>Download Resume</span>
-                </a>
-              </nav>
-            </div>
-
-            {/* ===== COLUMN 3: SERVICES ===== */}
-            <div className="lg:col-span-1">
-              <h3 className="text-lg font-semibold mb-6">Services</h3>
-              <div className="space-y-4">  {/* Space between service items */}
-                {/* Each service is plain text */}
-                <div className="text-gray-300">Web Development</div>
-                <div className="text-gray-300">UI/UX Design</div>
-                <div className="text-gray-300">Branding & Graphics</div>
-                <div className="text-gray-300">Frontend Development</div>
-                <div className="text-gray-300">Responsive Design</div>
-              </div>
-            </div>
-
-            {/* ===== COLUMN 4: TECHNOLOGIES ===== */}
-            <div className="lg:col-span-1">
-              <h3 className="text-lg font-semibold mb-6">Technologies</h3>
-              <div className="space-y-4">  {/* Space between tech items */}
-                {/* Each technology is plain text */}
-                <div className="text-gray-300">HTML & CSS</div>
-                <div className="text-gray-300">JavaScript & React</div>
-                <div className="text-gray-300">Node.js & Express</div>
-                <div className="text-gray-300">MongoDB & SQL</div>
-                <div className="text-gray-300">Git & Version Control</div>
+                  Send me a message →
+                </Link>
               </div>
             </div>
           </div>
-        </div>
 
-        {/* ===== BOTTOM COPYRIGHT SECTION ===== */}
-        <div className="
-          border-t border-gray-800  // Line on top
-          py-8 px-4                // Padding
-        ">
-          <div className="
-            flex flex-col md:flex-row  // Stack on phones, side-by-side on tablets+
-            justify-between           // Space between left and right
-            items-center             // Center vertically
-            space-y-4 md:space-y-0   // Space between items on phones only
-          ">
-            {/* Copyright text */}
-            <div className="text-gray-400 text-sm">
-              © {currentYear} Tiearra Westbrook. All rights reserved.
-              {/* Shows: © 2024 Tiearra Westbrook. All rights reserved. */}
-            </div>
-            {/* Legal links */}
-            <div className="
-              flex items-center  // Side by side
-              space-x-6          // Space between links
-              text-sm text-gray-400
-            ">
-              <Link to="/contact" className="
-                hover:text-primary-400  // Purple on hover
-                transition-colors duration-200
-              ">
-                Privacy Policy
-              </Link>
-              <Link to="/contact" className="
-                hover:text-primary-400
-                transition-colors duration-200
-              ">
-                Terms of Service
-              </Link>
+          {/* BOTTOM SECTION - Copyright and divider line */}
+          <div className="border-t border-gray-800 pt-8">
+            <div className="flex flex-col md:flex-row justify-between items-center">
+              {/* Copyright text */}
+              <p className="text-gray-400 text-sm">
+                © {currentYear} Tiearra Westbrook. All rights reserved.
+              </p>
+              {/* Built with love note */}
+              <p className="text-gray-400 text-sm mt-2 md:mt-0">
+                Built with ❤️ using React & Tailwind CSS
+              </p>
             </div>
           </div>
         </div>
